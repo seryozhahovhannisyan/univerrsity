@@ -1,0 +1,26 @@
+<!--Authentication-->
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="user_auth_package" extends="struts-default" abstract="true">
+
+        <interceptors>
+
+            <interceptor name="user_authentication" class="com.university.web.action.general.interceptor.UserAuthInterceptor"/>
+            <interceptor name="language" class="com.university.web.action.general.interceptor.LanguageInterceptor"/>
+
+            <interceptor-stack name="user_authentication_stack">
+                <interceptor-ref name="user_authentication"/>
+                <interceptor-ref name="language"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+
+
+        </interceptors>
+
+        <default-interceptor-ref name="user_authentication_stack"/>
+
+    </package>
+</struts>

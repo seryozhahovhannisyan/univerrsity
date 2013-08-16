@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+
+    <bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:com/university/data_access/config/db-config.properties"/>
+        <property name="locations">
+            <list>
+                <value>classpath:com/university/data_access/config/db-config.properties</value>
+                <value>classpath:com/university/data_access/config/email_config.properties</value>
+            </list>
+        </property>
+
+    </bean>
+
+    <!--data source definition-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+
+
+        <property name="driverClassName" value="${db-driver}"/>
+        <property name="url" value="${db-url}"/>
+        <property name="username" value="${db-username}"/>
+        <property name="password" value="${db-password}"/>
+        <property name="maxActive" value="50"/>
+        <!--<property name="maxWait" value="-1"/>-->
+        <property name="validationQuery" value="select 1 " />
+    </bean>
+
+    <bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+        <property name="configLocation" value="classpath:com/university/data_access/ConfigLocation.xml"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- setup transaction service	-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- Enable the configuration of transactional behavior based on annotations -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+</beans>

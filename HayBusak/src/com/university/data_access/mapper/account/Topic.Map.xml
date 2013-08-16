@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsTopic">
+
+    <cacheModel id="cmTopic" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <!--
+    private int id;
+    private String title;
+    private String dataPath;
+    private Date creationDate;
+    // Database column is group_subject_id will get the subject from CourseGroup
+    private GroupSubject groupSubject;
+    -->
+    <resultMap id="rmTopic" class="Topic">
+        <result property="id" column="id" nullValue="0"/>
+        <result property="title" column="title"/>
+        <result property="creationDate" column="creation_date"/>
+        <result property="groupSubject" column="group_subject_id" select="nsGroupSubject.getById"/>
+    </resultMap>
+
+    <!--
+     public void add(Topic data) throws DatabaseException;
+    public void addUserTopic(int topicId,List<Integer> userIdes) throws DatabaseException;
+    public Topic getById(int id) throws DatabaseException;
+    public List<Topic> getByParams(Map<String, Object> params) throws DatabaseException;
+    public void update(Topic data) throws DatabaseException, EntityNotFoundException;
+    public void delete(int id) throws DatabaseException, EntityNotFoundException;
+    -->
+    <insert id="add" parameterClass="Topic">
+
+        INSERT INTO topic (
+            `title`,
+            `data_path`,
+            `creation_date`,
+            `group_subject_id`
+        ) VALUES
+            (
+                #title#,
+                #dataPath#,
+                #creationDate#,
+                #groupSubject.id#
+            )
+        <selectKey keyProperty="id" resultClass="int">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+    <insert id="addUserTopic" parameterClass="map">
+
+        INSERT INTO user_topic (
+            `topic_id`,
+            `user_id`
+        ) VALUES
+        <iterate property="userIdes" conjunction=",">
+                (
+                    #topicId#,
+                    #userIdes[]#
+                )
+        </iterate>
+
+    </insert>
+
+
+    <select id="getById"
+            resultMap="rmTopic"
+            cacheModel="cmTopic"
+            parameterClass="int">
+        SELECT * FROM topic WHERE `id` = #id#
+    </select>
+
+    <select id="getUserTopics"
+            resultMap="rmTopic"
+            cacheModel="cmTopic"
+            parameterClass="int">
+        SELECT t.* FROM topic AS t, user_topic AS ut
+        WHERE `ut`.topic_id = t.id
+              AND  ut.user_id = #userId#
+    </select>
+
+    <!--todo add date interval cases-->
+
+    <select id="getByParams"
+            resultMap="rmTopic"
+            cacheModel="cmTopic"
+            parameterClass="map">
+        SELECT * FROM topic WHERE 1
+        <isNotNull property="id">
+            AND `id`= #id#
+        </isNotNull>
+        <isNotNull property="title">
+            AND `title`= #title#
+        </isNotNull>
+        <isNotNull property="groupSubject">
+            AND `group_subject_id`= #groupSubject.id#
+        </isNotNull>
+    </select>
+
+    <update id="update" parameterClass="Topic">
+
+        UPDATE topic
+        SET
+        <isNotNull property="title">
+            AND `title`= #title#
+        </isNotNull>
+        <isNotNull property="dataPath">
+            AND `data_path`= #dataPath#
+        </isNotNull>
+        <isNotNull property="creationDate">
+            AND `creation_date`= #creationDate#
+        </isNotNull>
+        <isNotNull property="groupSubject">
+            AND `groupSubject`= #groupSubject.id#
+        </isNotNull>
+        WHERE
+        `id` =#id#
+
+    </update>
+
+
+    <delete id="remove" parameterClass="int">
+        DELETE FROM topic
+        WHERE id =#id#
+    </delete>
+
+
+</sqlMap>

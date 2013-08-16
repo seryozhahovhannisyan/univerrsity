@@ -1,0 +1,609 @@
+#test-result {
+}
+#test-result h1 {
+    font-size: 1.8em;
+}
+#test-result .passed {
+    color: green;
+}
+#test-result .failed {
+    color: red;
+}
+#test-result .requiredCorrectAnswers {
+    color: gray;
+    margin-left: 20px;
+}
+#test-result .brief p {
+    margin: 7px 0;
+}
+
+.topic-breakdown {
+    margin-top: 5px;
+}
+.topic-breakdown .title {
+    background: none repeat scroll 0 0 #F1F1F1;
+}
+.topic-breakdown th {
+    padding: 5px 80px 5px 3px;
+}
+.topic-breakdown td {
+    padding: 5px 3px;
+}
+
+/*question*/
+#question-status-img {
+    background: url("/icon/general/left_menu/issue-statuses.png") no-repeat scroll 0 0 transparent;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: top;
+    width: 16px;
+}
+#question-status-img.waiting_approval {
+    background-position: 0 0;
+}
+#question-status-img.approved {
+    background-position: 0 -32px;
+}
+#question-status-img.rejected {
+    background-position: 0 -16px;
+}
+
+.question-status-waiting_approval {
+    color: orange;
+}
+.question-status-approved {
+    color: green;
+}
+.question-status-rejected {
+    color: red;
+}
+
+.interview-questions-catalog {
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.interview-questions-catalog ul {
+    margin: 0 0 10px 15px;
+}
+.interview-questions-catalog ul li a {
+    color: #1972A9;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.interview-questions-catalog ul li a:hover {
+    text-decoration: underline;
+}
+.interview-questions-catalog .column {
+    float: left;
+    width: 33%;
+}
+
+.test-page .closed-adding-questions {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 1px solid #DEDEDE;
+    margin: 10px 1px 5px 10px;
+    padding: 5px 7px;
+}
+
+.question-result .question {
+    margin: 15px 0;
+    padding: 10px 15px 5px 5px;
+}
+.question-result .correct {
+    background: none repeat scroll 0 0 #F5FFF5;
+}
+.question-result .incorrect {
+    background: none repeat scroll 0 0 #FFF5F5;
+}
+.question-result .correct .question-text {
+    background: url("/icon/general/left_menu/answered.gif") no-repeat scroll 0 0 transparent;
+}
+.question-result .incorrect .question-text {
+    background: url("/icon/general/left_menu/wrong.gif") no-repeat scroll 0 0 transparent;
+}
+.question-result div.question-text {
+    font-size: 1.3em;
+    margin: 0 5px 10px;
+    padding-left: 25px;
+    position: relative;
+}
+.question-result div.question-topic {
+    color: #444444;
+    float: right;
+    margin-left: 10px;
+}
+.question-result .text-answer {
+    margin-left: 30px;
+}
+.question-result .text-answer p {
+    margin: 5px 0;
+}
+.question-result ul.answers {
+    list-style: none outside none;
+    margin-left: 30px;
+}
+.question-result ul.answers li {
+    border-bottom: 1px solid #E1E1E1;
+    padding: 3px 0 5px;
+    position: relative;
+}
+.question-result ul.answers li.last {
+    border: medium none;
+    padding-bottom: 10px;
+}
+.question-result ul.answers li p {
+    display: inline;
+    font-weight: normal;
+    padding: 0 0 0 20px;
+}
+.question-result ul.answers li p.correct {
+    background: url("/icon/general/left_menu/correct.gif") no-repeat scroll 0 0 transparent;
+}
+.question-result p.explanation {
+    font-style: italic;
+    margin: 7px 5px 7px 30px;
+}
+.question-result .footer {
+    border-top: 1px solid #E1E1E1;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 7px;
+}
+.question-result .footer span.author {
+    float: right;
+    margin-right: 5px;
+}
+.question-result .question-comments {
+    background: none repeat scroll 0 0 white;
+    margin-top: 5px;
+    padding: 3px;
+    width: 600px;
+}
+.question-result .question-comments .comments .comment-block .head {
+    height: 26px;
+}
+.question-result .hidden {
+    display: none;
+}
+.question-rating {
+}
+.question-rating img.up, .question-rating img.down {
+    background: url("/icon/general/left_menu/up_down.gif") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 15px;
+    margin: 0 7px;
+    vertical-align: middle;
+    width: 11px;
+}
+.question-rating img.down {
+    background-position: -11px top;
+}
+.question-rating .disabled img.up, .question-rating .disabled img.down {
+    cursor: auto;
+}
+.question-rating .disabled img.up {
+    background-position: right top;
+}
+.question-rating .disabled img.down {
+    background-position: -22px bottom;
+}
+
+#edit-question {
+    border-bottom: 1px dotted gray;
+    border-top: 1px dotted gray;
+    display: none;
+    float: left;
+    margin-bottom: 20px;
+    padding: 13px 0 20px;
+    width: 460px;
+}
+#edit-question h2 {
+    font-size: 1.4em;
+    font-weight: normal;
+}
+#edit-question p {
+    margin-top: 10px;
+}
+#edit-question .errors {
+    color: red;
+    font-size: 1em;
+}
+#edit-question select {
+    margin-top: 10px;
+    width: 460px;
+}
+#edit-question .qtext {
+    background: none repeat scroll 0 0 #F5F5FF;
+    height: 110px;
+    margin-top: 12px;
+    padding: 10px 30px 15px 25px;
+}
+#edit-question .qtext textarea {
+    height: 110px;
+    width: 400px;
+}
+#edit-question .question-description {
+    background: none repeat scroll 0 0 #F5F5FF;
+    height: 80px;
+    margin-top: 12px;
+    padding: 10px 30px 15px 25px;
+}
+#edit-question #question-description {
+    height: 80px;
+    width: 400px;
+}
+#edit-question #question-answers {
+    overflow: hidden;
+}
+#edit-question .answer {
+    height: 60px;
+    margin: 12px 0;
+    padding: 10px 0 15px;
+}
+#edit-question .answer .check {
+    float: left;
+    padding: 0 5px;
+}
+#edit-question .answer .answertext {
+    float: left;
+}
+#edit-question .answer .answertext textarea {
+    height: 60px;
+    width: 400px;
+}
+#edit-question .answer .pic {
+    float: left;
+    margin-left: 5px;
+}
+#edit-question .answer .pic img {
+    cursor: pointer;
+}
+#edit-question .correct {
+    background: none repeat scroll 0 0 #F5FFF5;
+}
+#edit-question .incorrect {
+    background: none repeat scroll 0 0 #FFF5F5;
+}
+#edit-question .buttons {
+    margin-top: 0;
+    text-align: center;
+}
+#edit-question .table {
+    margin-left: 1px;
+    padding: 10px 5px 0;
+    text-align: left;
+    vertical-align: top;
+}
+#edit-question .table input.check {
+    padding-left: 2px;
+}
+#edit-question .buttons {
+    height: 40px;
+    width: auto;
+}
+#edit-question .buttons input {
+    float: right;
+    font-size: 1.2em;
+    margin: 10px 5px 0;
+}
+#edit-question .buttons a {
+    cursor: pointer;
+    float: right;
+    margin: 14px 5px 0;
+}
+#edit-question .buttons a.add {
+    float: left;
+}
+#edit-question .buttons img.add {
+    background: url("/icon/general/left_menu/plus.gif") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 13px;
+    margin-top: 15px;
+    width: 13px;
+}
+#edit-question .buttons img.preview {
+    background: url("/icon/general/left_menu/preview.gif") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: right;
+    height: 21px;
+    margin-top: 12px;
+    width: 21px;
+}
+.edit-your-question {
+    color: #1972A9;
+    cursor: pointer;
+    display: block;
+    font-size: 1.4em;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+#question-preview {
+    display: none;
+    margin-left: 500px;
+    padding-top: 10px;
+}
+#question-preview p.title {
+    margin: 11px 0;
+}
+#question-preview p.q-text {
+    background: none repeat scroll 0 0 #F5F5FF;
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding: 8px;
+}
+#question-preview ul {
+    margin: 10px 0;
+}
+#question-preview ul li {
+    background: none repeat scroll 0 0 #FFF5F5;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    padding: 8px;
+}
+#question-preview ul li.correct {
+    background: none repeat scroll 0 0 #F5FFF5;
+}
+#question-preview p.desc-text {
+    background: none repeat scroll 0 0 #F5F5FF;
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding: 8px;
+}
+#question-preview pre {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#question-comments {
+    width: 700px;
+}
+
+.addQuestion {
+    display: none;
+    margin-left: 280px;
+}
+.addQuestion #edit-question {
+    border: medium none;
+}
+
+.question-page div.question-text {
+    font-size: 1.3em;
+    margin: 0 5px 10px;
+    padding-left: 5px;
+}
+.question-page div.question-topic {
+    color: #444444;
+    float: right;
+    margin-left: 10px;
+}
+.question-page .text-answer {
+    margin-left: 30px;
+}
+.question-page .text-answer p {
+    margin: 5px 0;
+}
+.question-page ul.answers {
+    list-style: none outside none;
+    margin-left: 30px;
+}
+.question-page ul.answers li {
+    border-bottom: 1px solid #E1E1E1;
+    padding: 3px 0 5px;
+}
+.question-page ul.answers li.last {
+    border: medium none;
+    padding-bottom: 10px;
+}
+.question-page ul.answers li p {
+    display: inline;
+    font-weight: normal;
+    padding-left: 10px;
+}
+.question-page p.explanation {
+    font-style: italic;
+    margin: 7px 5px 7px 30px;
+}
+.question-page .footer {
+    border-top: 1px solid #E1E1E1;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 7px;
+}
+.question-page .footer span.author {
+    float: right;
+    margin-right: 5px;
+}
+.question-page .question-comments {
+    background: none repeat scroll 0 0 white;
+    margin-top: 5px;
+    padding: 3px;
+    width: 600px;
+}
+.question-page .question-comments .comments .comment-block .head {
+    height: 26px;
+}
+.question-page .hidden {
+    display: none;
+}
+#question-list {
+    max-width: 900px;
+}
+#question-list table {
+    font-size: 1.1em;
+    width: 100%;
+}
+#question-list table th {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid white;
+    padding: 3px 5px;
+}
+#question-list table tr {
+    background: none repeat scroll 0 0 #F6F6F6;
+}
+#question-list table tr.even {
+    background: none repeat scroll 0 0 #FBFBFB;
+}
+#question-list table td {
+    border: 1px solid white;
+    padding: 3px 5px;
+}
+#question-list table td.author {
+    width: 17%;
+}
+
+#interview-category-page .add-question-btn {
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    top: -38px;
+}
+
+#interview-category-page #question-thanks {
+    color: green;
+    display: none;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+#interview-category-page #addElse {
+    display: none;
+    font-size: 1.3em;
+}
+#interview-category-page .question-form {
+    border-bottom: 1px dotted gray;
+    border-top: 1px dotted gray;
+    display: none;
+    margin-top: 15px;
+    padding: 5px 0 10px;
+    width: 440px;
+}
+#interview-category-page .question-form h2 {
+    font-weight: normal;
+    width: auto;
+}
+#interview-category-page .question-form .errors {
+    color: red;
+    font-size: 1em;
+    line-height: normal;
+}
+#interview-category-page .question-form form p {
+    line-height: 30px;
+    margin-top: 5px;
+}
+#interview-category-page .question-form form p input {
+    width: 100%;
+}
+#interview-category-page .question-form form textarea {
+    width: 100%;
+}
+#interview-category-page .question-form .buttons input {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+#interview-question-page {
+    width: 750px;
+}
+#interview-question-page h3 {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+#interview-question-page h3 span.author {
+    float: right;
+    margin-right: 5px;
+}
+#interview-question-page .question {
+    margin-top: 15px;
+}
+#interview-question-page .question .title {
+    color: #88A5BF;
+    font-size: 18px;
+}
+#interview-question-page .question .text {
+    background-color: #EAF5FF;
+    font-size: 1.1em;
+    padding: 10px 15px;
+}
+#interview-question-page .question .text .topic {
+    color: #444444;
+    float: right;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+#interview-question-page .answer {
+    margin-top: 15px;
+}
+#interview-question-page .answer .title {
+    color: #8FB58F;
+    font-size: 18px;
+}
+#interview-question-page .answer .spoil {
+    margin-left: 5px;
+}
+#interview-question-page .answer .text {
+    background-color: #E8F6E8;
+    font-size: 1.1em;
+    padding: 10px 15px;
+}
+#interview-question-page .question-comments {
+    background: none repeat scroll 0 0 white;
+    margin-top: 5px;
+    padding: 3px;
+    width: 600px;
+}
+#interview-question-page .question-comments .comments .comment-block .head {
+    height: 26px;
+}
+
+#footer a {
+    display: block;
+    height: 52px;
+    text-decoration: none;
+}
+#footer .forteko {
+    float: left;
+    width: 110px;
+}
+#footer span.title {
+    color: #AAAAAA;
+    display: block;
+    float: right;
+    font-size: 1.3em;
+    line-height: 35px;
+    margin-left: 5px;
+    margin-top: 6px;
+}
+/*Footer*/
+#footer b {
+    background: url("/icon/general/left_menu/hr-bg.gif") repeat-x scroll 0 0 transparent;
+    display: block;
+    font-weight: normal;
+    height: 1px;
+    overflow: hidden;
+}
+#footer .memory {
+    color: gray;
+    float: left;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+.comments-count {
+    color: gray;
+    margin-left: 7px;
+}
+#shareThis {
+    margin-bottom: 15px;
+    width: 100%;
+}
+pre.chili {
+    background-color: white;
+    border: 1px solid #DEDEDE;
+    font-size: 12px;
+    margin-top: 8px;
+    padding: 5px;
+}

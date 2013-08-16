@@ -1,0 +1,242 @@
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    top: 0;
+    width: 990px;
+    background-color:white;
+    /*background: url("/icon/general/bluecloud.jpg") repeat scroll center top transparent;*/
+}
+.header {
+    height: 163px;
+    width: 990px;
+    z-index: 1;
+}
+.menus {
+    height: 51px;
+    margin-bottom: 1px;
+    padding-top: 116px;
+    width: 990px;
+    z-index: 2;
+}
+#home {
+    margin-right: 240px;
+}
+.menus .menu_gray {
+    display: block;
+    float: left;
+    height: 33px;
+    margin: -1px 1px 1px 0;
+    width: 224px;
+}
+#search_text {
+    color: #999999;
+    float: left;
+    height: 31px;
+    margin: 2 5px;
+    width: 190px;
+}
+.search {
+    background: url("/icon/general/header/search.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 33px;
+    margin-top: 5px;
+    width: 20px;
+}
+/*###############################################################
+*/
+
+
+/*###############################################################
+*/
+.logo {
+    height: 129px;
+    margin-left: 17px;
+    margin-top: 18px;
+    position: absolute;
+    text-align: left;
+    width: 130px;
+    z-index: 3;
+}
+#banner {
+    /*background-color: #dadadd;*/
+    float: right;
+    margin-top: 8px;
+    min-height: 500px;
+    height: 100%;
+    /*padding: 10px;*/
+    width: 214px;
+}
+
+.menu{
+    float: left;
+    margin-top: 8px;
+    min-height: 500px;
+    height: 100%;
+    /*padding: 10px;*/
+    overflow: auto;
+    width: 20%
+}
+.page_footer {
+    background-color: #223994;
+    clear: both;
+    color: #CCCCCC;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    text-align: center;
+    width: 990px;
+}
+.footer_hr {
+    background-color: #CCCCCC;
+    height: 2px;
+    width: 990px;
+}
+.errorField {
+    color: red;
+}
+.warning {
+    background-color: #F5F5F5;
+    width: 149px;
+}
+.show {
+    height: 234px;
+    /*margin-top: -18px;*/
+}
+.show .slide_show {
+    background-color: #FFFFFF;
+    float: left;
+    height: 232px;
+    position: relative;
+    width: 764px;
+}
+.slide_show .border {
+    /*background: url("/icon/general/header/border2.JPG") repeat scroll 0 0 transparent ;*/
+    height: 232px;
+    position: relative;
+    width: 764px;
+    z-index: 13;
+}
+.show .slide_show IMG {
+    background-color: #FFFFFF;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+.show .login {
+    background: url("/icon/general/header/reg_form.png") no-repeat scroll 0 0 transparent;
+    color: #CCCCCC;
+    float: left;
+    height: 234px;
+    margin-left: 2px;
+    text-align: center;
+    width: 223px;
+}
+.show .login .email {
+    height: 20px;
+    margin-top: 10px;
+    width: 174px;
+}
+.show .login #captcha_image {
+    float: left;
+    height: 21px;
+    margin: 0;
+    width: 80px;
+}
+.show .login .password {
+    color: #BBBBBB;
+    height: 20px;
+    width: 174px;
+}
+.show .login input {
+    color: #223994;
+    margin-top: 10px;
+    padding: 0 3px;
+}
+.show .login #doSubscribe, #doRefuse {
+    background-color: #FF6633;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 20px;
+}
+.errorFieldSub {
+    color: red;
+    font-size: 12px;
+}
+#refuseLink {
+    color: #223994;
+    /*cursor: pointer;*/
+    float: right;
+    font-size: 13px;
+    font-weight: normal;
+    margin-right: 10px;
+    margin-top: 25px;
+    /*text-decoration: underline;*/
+
+    text-decoration: none;
+}
+#captcha_div {
+    display: block;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 0;
+    width: 185px;
+}
+#captcha_text {
+    display: block;
+    float: left;
+    height: 19px;
+    margin: 0;
+    width: 69px;
+}
+#captchaRefresh {
+    cursor: pointer;
+    float: left;
+    margin: 2px 4px 0;
+}
+.show .login #resetSubscribe, #resetRefuse {
+    background-color: #223994;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 20px;
+}
+.content {
+    float: left;
+    font-family: Arial,sans-serif;
+    margin: 24px 9px 10px 10px;
+    text-align: left;
+    /*width: 579px;*/
+    width: 479px;
+}
+.content .p {
+    color: #FF6633 !important;
+    font-size: 18
+}
+.content_line {
+    background-color: #223994;
+    height: 3px;
+    margin-top: 4px;
+    width:80%
+}
+.context {
+    clear: both;
+    font-family: Arial,sans-serif;
+    font-size: small !important;
+    margin-top: 15px;
+    min-height: 300px;
+    text-align: justify;
+}
+#marquee {
+    color: #999999;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    margin: 0 20px;
+}

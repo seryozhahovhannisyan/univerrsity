@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsDepartment">
+
+    <cacheModel id="cmDepartment" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <cacheModel id="cmDepartmentInfo" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <!--
+    private int id;
+
+    private String name;
+    private Language language;
+
+    private University university;
+    private List<DepartmentInfo> departmentInfos;
+    -->
+
+    <resultMap id="rmDepartmentAllLang" class="Department">
+
+        <result property="id" column="id" nullValue="0"/>
+        <result property="university" column="university_id" select="nsUniversity.getByIdAllLang"/>
+        <result property="departmentInfos" column="id" select="nsDepartment.getDepartmentInfosByDepartmentId"/>
+
+    </resultMap>
+
+    <resultMap id="rmDepartment" class="Department">
+
+        <result property="id" column="dep_id" nullValue="0"/>
+        <result property="language" column="dep_lang"/>
+        <result property="name" column="dep_name" />
+        <result property="university" column="university_id" resultMap="nsUniversity.rmUniversity" />
+
+    </resultMap>
+
+
+
+    <!--
+    private int departmentId;
+    private String name;
+
+    private Language language;
+    -->
+
+    <resultMap id="rmDepartmentInfo" class="DepartmentInfo">
+        <result property="departmentId" column="department_id"/>
+        <result property="name" column="name"/>
+        <result property="language" column="lang_id"/>
+    </resultMap>
+
+
+    <select id="getDepartmentInfosByDepartmentId" resultMap="rmDepartmentInfo" parameterClass="int">
+        SELECT * from department_info WHERE department_id = #departmentId#
+    </select>
+    <!--
+    -->
+
+    <insert id="add" parameterClass="Department">
+
+        INSERT INTO department (
+            `university_id`
+        ) VALUES (
+            #university.id#
+        )
+
+        <selectKey keyProperty="id" resultClass="int">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+    <insert id="addInfos" parameterClass="map">
+        INSERT
+            INTO department_info (
+            `name`,
+            `department_id`,
+            `lang_id`
+        )VALUES
+        <iterate property="infos" conjunction=",">
+            (
+            #infos[].name#,
+            #infos[].departmentId#,
+            #infos[].language#
+            )
+        </iterate>
+
+    </insert>
+
+
+    <select id="getByIdAllLang"
+            parameterClass="int"
+            resultMap="rmDepartmentAllLang">
+
+        SELECT * FROM department WHERE id =#id#
+
+    </select>
+
+    <select id="getById"
+            cacheModel="cmDepartment"
+            parameterClass="map"
+            resultMap="rmDepartment">
+
+        SELECT
+            d.university_id AS id,
+            u.phone AS phone,
+            u.email AS email,
+            u.logo_path AS logo_path,
+            u.link AS link,
+            ui.name AS name,
+            ui.abbreviation AS abbreviation,
+            ui.address AS address,
+            ui.info AS info,
+            ui.lang_id AS lang_id,
+            d.id AS  dep_id,
+            i.lang_id AS dep_lang,
+            i.name AS dep_name
+        FROM    department AS d , department_info AS i , university_info AS ui, university AS u
+        WHERE
+            i.lang_id = #langId#   AND
+            d.id = #id# AND
+            d.id = i.department_id AND
+            u.id= ui.university_id AND
+            ui.university_id = d.university_id  AND
+            i.lang_id = ui.lang_id
+
+    </select>
+
+
+    <select id="getAll"
+            cacheModel="cmDepartment"
+            parameterClass="int"
+            resultMap="rmDepartment">
+
+        SELECT
+            d.university_id AS id,
+            u.phone AS phone,
+            u.email AS email,
+            u.logo_path AS logo_path,
+            u.link AS link,
+            ui.name AS name,
+            ui.abbreviation AS abbreviation,
+            ui.address AS address,
+            ui.info AS info,
+            ui.lang_id AS lang_id,
+            d.id AS  dep_id,
+            i.lang_id AS dep_lang,
+            i.name AS dep_name
+        FROM    department AS d , department_info AS i , university_info AS ui, university AS u
+        WHERE
+            i.lang_id = #langId#   AND
+            d.id = i.department_id AND
+            u.id= ui.university_id AND
+            ui.university_id = d.university_id  AND
+            i.lang_id = ui.lang_id
+
+    </select>
+
+    <select id="getByParams"
+            cacheModel="cmDepartment"
+            parameterClass="map"
+            resultMap="rmDepartment">
+
+        SELECT
+            d.university_id AS id,
+            u.phone AS phone,
+            u.email AS email,
+            u.logo_path AS logo_path,
+            u.link AS link,
+            ui.name AS name,
+            ui.abbreviation AS abbreviation,
+            ui.address AS address,
+            ui.info AS info,
+            ui.lang_id AS lang_id,
+            d.id AS  dep_id,
+            i.lang_id AS dep_lang,
+            i.name AS dep_name
+        FROM    department AS d , department_info AS i , university_info AS ui, university AS u
+        WHERE
+            d.id = i.department_id AND
+            u.id= ui.university_id AND
+            ui.university_id = d.university_id  AND
+            i.lang_id = ui.lang_id
+        <isNotNull property="langId">
+            AND i.lang_id = #langId#
+        </isNotNull>
+        <isNotNull property="universityId">
+            AND u.id = #universityId#
+        </isNotNull>
+        <isNotNull property="departmentId">
+            AND d.id = #departmentId#
+        </isNotNull>
+
+    </select>
+
+
+
+    <update id="editInfo" parameterClass="DepartmentInfo">
+
+        UPDATE department_info
+        SET
+            `name` = #name#
+        WHERE
+            department_id =#departmentId# AND
+            `lang_id` = #language.value#
+
+    </update>
+
+
+    <delete id="remove" parameterClass="int">
+        DELETE FROM department
+        WHERE id =#id#
+    </delete>
+
+</sqlMap>

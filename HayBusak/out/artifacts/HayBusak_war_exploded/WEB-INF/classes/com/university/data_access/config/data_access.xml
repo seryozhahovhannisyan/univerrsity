@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="universityDao" class="com.university.data_access.dao.department.impl.UniversityDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean id="departmentDao" class="com.university.data_access.dao.department.impl.DepartmentDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean id="reportDao" class="com.university.data_access.dao.department.impl.ReportDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean id="documentDao" class="com.university.data_access.dao.department.impl.DocumentDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean id="facultyDao" class="com.university.data_access.dao.department.impl.FacultyDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean id="facultyDegreeDao" class="com.university.data_access.dao.department.impl.FacultyDegreeDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+    <!--
+    ####################################################################################################################
+    Account Dao-s
+    ####################################################################################################################
+    -->
+    <bean id="courseGroupDao" class="com.university.data_access.dao.account.impl.CourseGroupDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean id="groupSubjectDao" class="com.university.data_access.dao.account.impl.GroupSubjectDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean id="subjectDao" class="com.university.data_access.dao.account.impl.SubjectDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean id="topicDao" class="com.university.data_access.dao.account.impl.TopicDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean id="userDao" class="com.university.data_access.dao.account.impl.UserDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <!--
+   ####################################################################################################################
+   Quiz Dao-s
+   ####################################################################################################################
+   -->
+
+    <bean id="questionDao" class="com.university.data_access.dao.quiz.impl.QuestionDaoImpl">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+</beans>

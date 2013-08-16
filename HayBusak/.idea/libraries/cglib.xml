@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="cglib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/cglib-2.1.0/asm-attrs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/cglib-2.1.0/asm-util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/cglib-2.1.0/asm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/cglib-2.1.0/cglib-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/cglib-2.1.0/cglib-nodep-2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/cglib-2.1.0/cglib-docs-2.1.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/cglib-2.1.0/cglib-src-2.1.jar!/src/test" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/cglib-2.1.0/cglib-src-2.1.jar!/src/proxy" />
+    </SOURCES>
+  </library>
+</component>

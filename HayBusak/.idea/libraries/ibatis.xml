@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="ibatis">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/ibatis/ibatis-2.3.4.726.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../UniversityLibs/ibatis/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../UniversityLibs/ibatis/src" recursive="false" type="SOURCES" />
+  </library>
+</component>

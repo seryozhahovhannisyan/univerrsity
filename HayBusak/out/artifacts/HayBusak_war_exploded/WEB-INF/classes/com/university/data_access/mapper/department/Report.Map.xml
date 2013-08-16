@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsReport">
+
+    <cacheModel id="cmReport" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <!--
+        id             int(15) unsigned  (NULL)     NO      PRI     (NULL)   auto_increment  select,insert,update,references
+        title          varchar(150)      utf8_bin   NO              (NULL)                   select,insert,update,references
+        creation_date  date              (NULL)     NO              (NULL)                   select,insert,update,references
+        content        text              utf8_bin   NO              (NULL)                   select,insert,update,references
+        icon_path      varchar(256)      utf8_bin   NO              (NULL)                   select,insert,update,references
+        lang_id        int(1) unsigned   (NULL)     NO      MUL     (NULL)                   select,insert,update,references
+        department_id  int(5) unsigned   (NULL)     YES     MUL     (NULL)                   select,insert,update,references
+        type_id        int(1) unsigned   (NULL)     NO      MUL     (NULL)                   select,insert,update,references
+
+        private long id;
+        private String title;
+        private Date creationDate;
+        private String content;
+        private String iconPath;
+        private Language language;
+        private int departmentId;
+        private ReportType type;
+    -->
+    <resultMap id="rmReport" class="Report">
+        <result property="id" column="id" nullValue="0"/>
+        <result property="reportId" column="report_id" nullValue="0"/>
+        <result property="title" column="title"/>
+        <result property="creationDate" column="creation_date"/>
+        <result property="content" column="content"/>
+        <result property="iconPath" column="icon_path"/>
+        <result property="language" column="lang_id"/>
+        <result property="departmentId" column="department_id"/>
+        <result property="type" column="type_id"/>
+    </resultMap>
+
+    <insert id="addReport" parameterClass="Report">
+        INSERT INTO report (
+            `creation_date`,
+            `icon_path`
+        ) VALUES (
+            #creationDate#,
+            #iconPath#
+        )
+
+        <selectKey keyProperty="id" resultClass="long">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+
+    <insert id="addReportInfo" parameterClass="Report">
+        INSERT INTO report_info (
+            `report_id`,
+            `title`,
+            `content`,
+            `lang_id`,
+            `department_id`,
+            `type_id`
+        ) VALUES (
+            #reportId#,
+            #title#,
+            #content#,
+            #language#,
+            #departmentId#,
+            #type#
+        )
+
+        <selectKey keyProperty="id" resultClass="long">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+    <select id="getReportById"
+            cacheModel="cmReport"
+            resultMap="rmReport"
+            parameterClass="long">
+
+        SELECT r.creation_date,r.icon_path, i.title, i.content, i.lang_id, i.department_id, i.type_id
+            FROM report AS r, report_info AS i
+            WHERE i.id=#id# AND r.id = i.report_id
+
+    </select>
+
+    <select id="getReportByTitle"
+            cacheModel="cmReport"
+            resultMap="rmReport"
+            parameterClass="string">
+
+        SELECT r.creation_date,r.icon_path, i.title, i.content, i.lang_id, i.department_id, i.type_id
+        FROM report AS r, report_info AS i
+        WHERE i.title=#title# AND r.id = i.report_id
+
+    </select>
+
+    <select id="getReportsByType"
+            cacheModel="cmReport"
+            resultMap="rmReport"
+            parameterClass="map">
+
+        SELECT r.creation_date,r.icon_path, i.title, i.content, i.lang_id, i.department_id, i.type_id
+        FROM report AS r, report_info AS i
+        WHERE r.id = i.report_id
+        ORDER BY `i.id` DESC LIMIT #start#,#end#;
+
+    </select>
+
+    <select id="getReportPagination"
+            cacheModel="cmReport"
+            resultMap="rmReport"
+            parameterClass="map">
+
+        SELECT r.creation_date,r.icon_path, i.title, i.content, i.lang_id, i.department_id, i.type_id
+        FROM report AS r, report_info AS i
+        WHERE r.id = i.report_id
+        ORDER BY `i.id` DESC LIMIT #start#,#end#;
+
+    </select>
+
+    <update id="editReport" parameterClass="Report" >
+
+        UPDATE report
+        SET
+            `creation_date`=#creationDate#,
+            `icon_path`=#iconPath#
+        WHERE
+            id=#id#
+
+    </update>
+
+    <update id="editReportInfo" parameterClass="Report" >
+
+        UPDATE report_info
+        SET
+            `title`=#title#,
+            `content`=#content#,
+            `lang_id`=#language#,
+            `department_id`=#departmentId#,
+            `type_id`=#type#
+        WHERE
+            id=#id#
+
+    </update>
+
+
+    <delete id="removeReport" parameterClass="long" >
+        DELETE FROM report WHERE id=#id#
+    </delete>
+    <!--
+     /*Create*/
+    public void addReport(Report report) throws DatabaseException;
+    /*Read*/
+    public Report getReportById(int id) throws DatabaseException;
+    public Report getReportByTitle(String title) throws DatabaseException;
+    public List<Report> getReportByType(ReportType reportType, int start, int end) throws DatabaseException;
+    public List<Report> getReportPagination(int start, int end) throws DatabaseException;
+    /*Edit*/
+    public void editReport(Report report) throws DatabaseException, EntityNotFoundException;
+    /*Delete*/
+    public void removeReport(int reportId) throws DatabaseException, EntityNotFoundException;
+    -->
+
+
+</sqlMap>

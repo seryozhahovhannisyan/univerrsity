@@ -1,0 +1,27 @@
+<!--Authentication-->
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="admin_auth_package"  extends="json-default" abstract="true">
+
+        <interceptors>
+
+            <interceptor name="admin_authentication" class="com.university.web.action.general.interceptor.AdminAuthInterceptor"/>
+            <interceptor name="language" class="com.university.web.action.general.interceptor.LanguageInterceptor"/>
+
+            <interceptor-stack name="admin_auth_stack">
+                <interceptor-ref name="admin_authentication"/>
+                <interceptor-ref name="language"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+
+
+        </interceptors>
+
+        <default-interceptor-ref name="admin_auth_stack"/>
+
+    </package>
+</struts>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsGroupSubject">
+
+    <cacheModel id="cmGroupSubject" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <resultMap id="rmGroupSubject" class="GroupSubject">
+        <result property="id" column="id" nullValue="0"/>
+        <result property="groupId" column="group_id"/>
+        <result property="subject" column="subject_id" select="nsSubject.getById"/>
+    </resultMap>
+
+    <!--
+     public void add(List<GroupSubject> groupSubjects) throws DatabaseException;
+    public GroupSubject getById(int id) throws DatabaseException;
+    public List<GroupSubject> getByParams(Map<String, Object> params) throws DatabaseException;
+    public void update(GroupSubject data) throws DatabaseException, EntityNotFoundException;
+    public void delete(int id) throws DatabaseException, EntityNotFoundException;
+    -->
+    <insert id="add" parameterClass="map">
+
+        INSERT INTO group_subject (
+            `group_id`,
+            `subject_id`
+        ) VALUES
+        <iterate property="groupSubjects" conjunction=",">
+            (
+                #groupSubjects[].groupId#,
+                #groupSubjects[].subjectId#
+            )
+        </iterate>
+        <selectKey keyProperty="id" resultClass="int">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+    <select id="getById"
+            resultMap="rmGroupSubject"
+            cacheModel="cmGroupSubject"
+            parameterClass="int">
+        SELECT * FROM group_subject WHERE `id` = #id#
+    </select>
+
+    <select id="getByParams"
+            resultMap="rmGroupSubject"
+            cacheModel="cmGroupSubject"
+            parameterClass="map">
+        SELECT * FROM group_subject WHERE 1
+        <isNotNull property="id">
+            AND `id`= #id#
+        </isNotNull>
+        <isNotNull property="groupId">
+            AND `group_id`= #groupId#
+        </isNotNull>
+        <isNotNull property="subjectId">
+            AND `subject_id`= #subjectId#
+        </isNotNull>
+    </select>
+
+    <update id="update" parameterClass="GroupSubject">
+
+        UPDATE group_subject
+        SET
+        <isNotNull property="groupId">
+            AND `group_id`= #groupId#
+        </isNotNull>
+        <isNotNull property="subjectId">
+            AND `subject_id`= #subjectId#
+        </isNotNull>
+        WHERE
+        `id` =#id#
+
+    </update>
+
+
+    <delete id="remove" parameterClass="int">
+        DELETE FROM group_subject
+        WHERE id =#id#
+    </delete>
+
+
+</sqlMap>

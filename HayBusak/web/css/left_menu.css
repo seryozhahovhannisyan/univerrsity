@@ -1,0 +1,125 @@
+#universities_block .universities_content table td div {
+    overflow-x: hidden;
+    width: 80%;
+}
+#universities_block .universities_content table td span {
+    color: gray;
+}
+
+#universities_block .universities_content table td a {
+    float: right;
+    font-size: 11px;
+}
+
+#universities_block .universities_content table tr.even {
+    background-color: #FBFBFB;
+}
+
+#universities_block a, a:visited, a:link, a:hover {
+    color: #1972A9;
+    outline: medium none;
+}
+#universities_block a, a:visited, a:link, a:hover {
+    color: #1972A9;
+    outline: medium none;
+}
+
+.universities_block .universities_content table td div {
+    overflow-x: hidden;
+    width: 80%;
+}
+
+.universities_block .universities_content table td span {
+    color: gray;
+}
+
+.universities_block .universities_content table td a {
+    float: right;
+    font-size: 11px;
+}
+
+.universities_block .universities_content table tr.even {
+    background-color: #FBFBFB;
+}
+
+.universities_block a, a:visited, a:link, a:hover {
+    color: #1972A9;
+    outline: medium none;
+}
+
+.universities_block a, a:visited, a:link, a:hover {
+    color: #1972A9;
+    outline: medium none;
+}
+
+#contributors select {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.sblock {
+    background: none repeat scroll 0 0 #EEEEEE;
+    margin-bottom: 20px;
+    padding: 8px;
+    position: relative;
+}
+
+.sblock #contributors-content {
+    padding: 8px 4px 5px;
+}
+
+.sblock .title {
+    background: url("/icon/general/left_menu/sblock-sprite.png") no-repeat scroll 100% -16px transparent;
+    height: 30px;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.sblock .title b {
+    background: url("/icon/general/left_menu/sblock-sprite.png") no-repeat scroll 0 -16px transparent;
+    color: #419FDD;
+    display: block;
+    font-size: 1.5em;
+    font-weight: normal;
+    height: 30px;
+    padding: 2px 0 0 10px;
+}
+
+.sblock .corners * {
+    background: url("/icon/general/left_menu/sblock-sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 8px;
+    position: absolute;
+    width: 8px;
+}
+
+.sblock .corners s {
+    left: 0;
+    top: 0;
+}
+
+.sblock .corners b {
+    background-position: -8px 0;
+    right: 0;
+    top: 0;
+}
+
+.sblock .corners u {
+    background-position: -8px -8px;
+    bottom: 0;
+    right: 0;
+}
+
+.sblock .corners i {
+    background-position: 0 -8px;
+    bottom: 0;
+    left: 0;
+}
+
+.corners * {
+    background: url("/icon/general/left_menu/tests-filter-corners.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 4px;
+    position: absolute;
+    width: 4px;
+}

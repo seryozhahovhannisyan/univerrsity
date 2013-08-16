@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dataStorage" class="com.university.data_access.util.DataStorage"/>
+
+    <bean id="userManager" class="com.university.data_access.service.account.impl.UserManagerImpl">
+        <property name="userDao" ref="userDao"/>
+        <property name="dataStorage" ref="dataStorage"/>
+    </bean>
+
+    <bean id="universityManager" class="com.university.data_access.service.department.impl.UniversityManagerImpl">
+        <property name="universityDao" ref="universityDao"/>
+        <property name="dataStorage" ref="dataStorage"/>
+    </bean>
+
+    <bean id="departmentManager" class="com.university.data_access.service.department.impl.DepartmentManagerImpl">
+        <property name="departmentDao" ref="departmentDao"/>
+    </bean>
+
+    <bean id="reportManager" class="com.university.data_access.service.department.impl.ReportManagerImpl">
+        <property name="reportDao" ref="reportDao"/>
+        <property name="dataStorage" ref="dataStorage"/>
+    </bean>
+
+    <bean id="facultyManager" class="com.university.data_access.service.department.impl.FacultyManagerImpl">
+        <property name="facultyDao" ref="facultyDao"/>
+        <property name="dataStorage" ref="dataStorage"/>
+    </bean>
+
+    <bean id="facultyDegreeManager" class="com.university.data_access.service.department.impl.FacultyDegreeManagerImpl">
+        <property name="documentDao" ref="documentDao"/>
+        <property name="facultyDegreeDao" ref="facultyDegreeDao"/>
+        <property name="dataStorage" ref="dataStorage"/>
+    </bean>
+
+    <!--
+    ####################################################################################################################
+    Account Managers
+    ####################################################################################################################
+    -->
+
+    <bean id="courseGroupManager" class="com.university.data_access.service.account.impl.CourseGroupManagerImpl">
+        <property name="courseGroupDao" ref="courseGroupDao"/>
+    </bean>
+
+    <bean id="groupSubjectManager" class="com.university.data_access.service.account.impl.GroupSubjectManagerImpl">
+        <property name="groupSubjectDao" ref="groupSubjectDao"/>
+    </bean>
+
+    <bean id="subjectManager" class="com.university.data_access.service.account.impl.SubjectManagerImpl">
+        <property name="subjectDao" ref="subjectDao"/>
+    </bean>
+
+    <!--
+    ####################################################################################################################
+    Topic Managers
+    ####################################################################################################################
+    -->
+
+    <bean id="topicManager" class="com.university.data_access.service.account.impl.TopicManagerImpl">
+        <property name="topicDao" ref="topicDao"/>
+        <property name="dataStorage" ref="dataStorage"/>
+    </bean>
+
+    <!--
+   ####################################################################################################################
+   Quiz Managers
+   ####################################################################################################################
+   -->
+
+    <bean id="questionManager" class="com.university.data_access.service.quiz.impl.QuestionManagerImpl">
+        <property name="questionDao" ref="questionDao"/>
+    </bean>
+
+</beans>

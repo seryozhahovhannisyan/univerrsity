@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- PRODUCTION -->
+<!--<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" [<!ENTITY logpath "/var/lib/tomcat6/logs/mcommerce/web">]>-->
+<!-- DEVELOPMENT -->
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" [<!ENTITY logpath "/D:/workspace/IDE/Eva/Eva_Yerevan">]>
+
+<log4j:configuration>
+
+    <appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p %C (%M:%L) [%t] - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="GeneralAppender" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="&logpath;/logs.log"/>
+        <param name="DatePattern"    value="'.'yyyy-MM-dd"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p %C (%M:%L) [%t] - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="TrackerAppender" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="&logpath;/tracker/tracker.log"/>
+        <param name="DatePattern"    value="'.'yyyy-MM-dd"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p %C (%M:%L) [%t] - %m%n"/>
+        </layout>
+    </appender>
+
+    <!-- will only sends error events -->
+    <appender name="Email" class="org.apache.log4j.net.SMTPAppender">
+        <param name="BufferSize" value="1" /> <!-- default is 512, changed for test cases to work -->
+        <param name="SMTPProtocol" value="smtps" /><!-- GMail will not work without this, log4j 1.2.16 is required -->
+        <param name="SMTPHost" value="smtp.mandrillapp.com" />
+        <param name="SMTPPort" value="465" />
+        <param name="SMTPUsername" value="adik.hovhannisyan@gmail.com" /> <!-- example@gmail.com -->
+        <param name="SMTPPassword" value="zxcvbnm,./" />
+        <param name="From" value="adik.hovhannisyan@gmail.com" />
+        <param name="To" value="hovhannisyan.arthur@gmail.com" />
+        <param name="Subject" value="Cactus Log Mail" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[${name}] - %d{ISO8601} - %X{login} - %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="EMAIL_ASYNC" class="org.apache.log4j.AsyncAppender">
+        <param name="BufferSize" value="1"/>
+        <appender-ref ref="Email"/>
+    </appender>
+
+    <logger name="Informer" additivity="false" >
+        <level value="info"/>
+        <appender-ref ref="GeneralAppender"/>
+    </logger>
+
+    <logger name="Tracker" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="TrackerAppender"/>
+    </logger>
+
+    <root>
+        <level value ="info"/>
+        <appender-ref ref="ConsoleAppender"/>
+        <!--<appender-ref ref="Email" />-->
+    </root>
+
+</log4j:configuration>

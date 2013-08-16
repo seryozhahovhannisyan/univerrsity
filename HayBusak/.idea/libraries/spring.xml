@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="spring">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/spring-2.5.6/bin/spring-test.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/spring-2.5.6/bin/spring.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

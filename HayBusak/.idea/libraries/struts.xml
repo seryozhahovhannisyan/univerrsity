@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="struts">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/freemarker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/javassist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/ognl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/struts2-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/struts2-json-plugin-2.3.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/struts2-spring-plugin-2.3.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/struts2-tiles-plugin-2.3.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/xwork-core.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

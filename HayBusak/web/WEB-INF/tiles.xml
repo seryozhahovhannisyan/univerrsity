@@ -1,0 +1,144 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <!--
+    ####################################################################################################################
+               General
+    ####################################################################################################################
+    -->
+    <definition name="head" template="/WEB-INF/pages/general/tiles/header.jsp">
+        <put-attribute name="login" value="/WEB-INF/pages/general/login.jsp"/>
+        <put-attribute name="user_info" value="/WEB-INF/pages/general/user_info.jsp"/>
+    </definition>
+
+    <definition name="general" template="/WEB-INF/pages/general/general.jsp">
+
+        <put-attribute name="head" type="definition" value="head"/>
+        <put-attribute name="admin_actions" value="/WEB-INF/pages/general/tiles/admin_actions.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/admin/tiles/menu.jsp"/>
+        <put-attribute name="main" value="/WEB-INF/pages/exams/addquestion.jsp"/>
+        <!--<put-attribute name="main" value="/WEB-INF/pages/admin/tiles/main.jsp"/>-->
+        <!--<put-attribute name="banner" value="/WEB-INF/pages/general/tiles/banner.jsp"/>-->
+        <put-attribute name="banner" value="/WEB-INF/pages/general/tiles/banner_right.jsp"/>
+        <put-attribute name="foot" value="/WEB-INF/pages/general/tiles/footer.jsp"/>
+    </definition>
+
+    <definition name="registration" extends="general">
+        <put-attribute name="main" value="/WEB-INF/pages/general/registration.jsp"/>
+    </definition>
+
+
+    <!--
+    ####################################################################################################################
+               Admin
+    ####################################################################################################################
+    -->
+
+    <definition name="admin_layout" extends="general">
+        <!--<put-attribute name="menu" value="/WEB-INF/pages/admin/tiles/menu.jsp"/>-->
+        <!--<put-attribute name="main" value="/WEB-INF/pages/admin/tiles/main.jsp"/>-->
+    </definition>
+    <!--
+    ####################################################################################################################
+               Universities Layouts
+    ####################################################################################################################
+    -->
+
+    <definition name="view_all_universities" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/view_all_universities.jsp"/>
+    </definition>
+
+    <definition name="edit_university_info" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/edit_university_info.jsp"/>
+    </definition>
+
+    <definition name="pre_add_university" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/add_university.jsp"/>
+    </definition>
+    <!--
+    ####################################################################################################################
+               Departments Layouts
+    ####################################################################################################################
+    -->
+    <definition name="view_all_departments" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/view_all_departments.jsp"/>
+    </definition>
+
+    <definition name="edit_department_info" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/edit_department_info.jsp"/>
+    </definition>
+
+    <definition name="pre_add_department" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/add_department.jsp"/>
+    </definition>
+
+    <!--
+    ####################################################################################################################
+               Faculty Layouts
+    ####################################################################################################################
+    -->
+    <definition name="view_all_faculties" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/view_all_faculties.jsp"/>
+    </definition>
+
+    <definition name="pre_add_faculty" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/add_faculty.jsp"/>
+    </definition>
+
+    <definition name="edit_faculty_info" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/edit_faculty_info.jsp"/>
+    </definition>
+
+    <!--
+    ####################################################################################################################
+               Faculty  Degree Layouts
+    ####################################################################################################################
+    -->
+
+    <definition name="pre_add_faculty_degree" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/add_faculty_degree.jsp"/>
+    </definition>
+
+    <definition name="view_faculty_degrees" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/department/view_and_download_docs.jsp"/>
+    </definition>
+
+    <!--
+    ####################################################################################################################
+               Course Group Layouts
+    ####################################################################################################################
+    -->
+
+    <definition name="pre_add_course_group" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/account/add_course_group.jsp"/>
+    </definition>
+
+    <definition name="view_course_groups" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/account/view_course_groups.jsp"/>
+    </definition>
+
+    <definition name="pre_add_subject" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/account/add_subject.jsp"/>
+    </definition>
+    <!--
+    ####################################################################################################################
+               Topic Layouts
+    ####################################################################################################################
+    -->
+    <definition name="pre_add_topic" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/account/add_topic.jsp"/>
+    </definition>
+
+    <!--
+    ####################################################################################################################
+    ####################################################################################################################
+    Question
+    ####################################################################################################################
+    ####################################################################################################################
+    -->
+    <definition name="pre_add_question" extends="admin_layout">
+        <put-attribute name="main" value="/WEB-INF/pages/admin/quiz/add_question.jsp"/>
+    </definition>
+
+</tiles-definitions>

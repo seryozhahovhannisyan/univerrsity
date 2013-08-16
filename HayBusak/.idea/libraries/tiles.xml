@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="tiles">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/tiles/tiles-api-2.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/tiles/tiles-core-2.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UniversityLibs/struts2_3_4/tiles/tiles-jsp-2.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

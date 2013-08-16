@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsUniversity">
+
+    <cacheModel id="cmUniversity" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <cacheModel id="cmUniversityNames" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <cacheModel id="cmUniversityAllLang" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <cacheModel id="cmUniversityInfo" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <resultMap id="rmUniversity" class="University">
+
+        <result property="id" column="id" nullValue="0"/>
+        <result property="phone" column="phone"/>
+        <result property="email" column="email"/>
+        <result property="logoPath" column="logo_path"/>
+        <result property="link" column="link"/>
+
+        <result property="name" column="name"/>
+        <result property="abbreviation" column="abbreviation"/>
+        <result property="address" column="address"/>
+        <result property="info" column="info"/>
+        <result property="language" column="lang_id"/>
+
+    </resultMap>
+
+    <resultMap id="rmUniversityNames" class="University">
+
+        <result property="id" column="id" nullValue="0"/>
+        <result property="link" column="link"/>
+
+        <result property="name" column="name"/>
+
+    </resultMap>
+
+    <resultMap id="rmUniversityAllLang" class="University">
+        <result property="id" column="id" nullValue="0"/>
+        <result property="phone" column="phone"/>
+        <result property="email" column="email"/>
+        <result property="logoPath" column="logo_path"/>
+        <result property="link" column="link"/>
+        <result property="universityInfos" column="id" select="nsUniversity.getUniversityInfoByUniversityId"/>
+    </resultMap>
+
+    <resultMap id="rmUniversityInfo" class="UniversityInfo">
+        <result property="universityId" column="university_id"/>
+        <result property="name" column="name"/>
+        <result property="abbreviation" column="abbreviation"/>
+        <result property="address" column="address"/>
+        <result property="info" column="info"/>
+        <result property="language" column="lang_id"/>
+    </resultMap>
+
+    <select id="getUniversityInfoByUniversityId" resultMap="rmUniversityInfo" parameterClass="int">
+        SELECT
+            *
+        FROM university_info
+        WHERE university_id =#universityId#
+    </select>
+
+    <insert id="add" parameterClass="University">
+
+        INSERT INTO university (
+        `phone`,
+        `email`,
+        `logo_path`,
+        `link`
+        ) VALUES (
+        #phone#,
+        #email#,
+        #logoPath#,
+        #link#
+        )
+
+        <selectKey keyProperty="id" resultClass="int">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+    <insert id="addInfos" parameterClass="map">
+        INSERT
+        INTO university_info (
+        `name`,
+        `abbreviation`,
+        `address`,
+        `info`,
+        `university_id`,
+        `lang_id`
+        )VALUES
+        <iterate property="infos" conjunction=",">
+            (
+            #infos[].name#,
+            #infos[].abbreviation#,
+            #infos[].address#,
+            #infos[].info#,
+            #infos[].universityId#,
+            #infos[].language#
+            )
+        </iterate>
+
+    </insert>
+
+
+    <select id="getByIdAllLang"
+            cacheModel="cmUniversityAllLang"
+            parameterClass="int"
+            resultMap="rmUniversityAllLang">
+
+        SELECT
+            *
+        FROM university
+        WHERE id =#id#
+
+    </select>
+
+    <select id="getById"
+            cacheModel="cmUniversity"
+            parameterClass="map"
+            resultMap="rmUniversity">
+
+        SELECT
+            u.*,
+            i.*
+        FROM university AS u, university_info AS i
+        WHERE u.id = i.university_id AND
+              i.lang_id = #langId#   AND
+              u.id =#id#
+
+    </select>
+
+    <select id="getAll"
+            cacheModel="cmUniversity"
+            parameterClass="int"
+            resultMap="rmUniversity">
+
+        SELECT
+            u.*,
+            i.*
+        FROM university AS u, university_info AS i
+        WHERE u.id = i.university_id AND
+              i.lang_id =#langId#
+
+    </select>
+
+    <select id="getAllNames"
+            cacheModel="cmUniversityNames"
+            parameterClass="int"
+            resultMap="rmUniversityNames">
+
+        SELECT
+            u.id,
+            u.link,
+            i.name
+        FROM university AS u, university_info AS i
+        WHERE u.id = i.university_id AND
+              i.lang_id =#langId#
+
+    </select>
+
+    <select id="getByParams"
+            cacheModel="rmUniversity"
+            parameterClass="map"
+            resultMap="rmUniversity">
+
+        SELECT * FROM university WHERE 1
+        <isNotNull property="name">
+            AND name = #name#
+        </isNotNull>
+
+    </select>
+
+
+    <update id="edit" parameterClass="University">
+
+        UPDATE university
+        SET
+            `phone` = #phone#,
+            `email` = #email#,
+            `logo_path` = #logoPath#,
+            `link` = #link#
+        WHERE
+            id =#id#
+
+    </update>
+
+    <update id="editInfo" parameterClass="UniversityInfo">
+
+        UPDATE university_info
+        SET
+            `name` = #name#,
+            `abbreviation` = #abbreviation#,
+            `address` = #address#,
+            `info` = #info#
+        WHERE
+            university_id = #universityId# AND
+            `lang_id` = #language.value#
+
+    </update>
+
+
+    <delete id="remove" parameterClass="int">
+        DELETE FROM university
+        WHERE id =#id#
+    </delete>
+
+</sqlMap>

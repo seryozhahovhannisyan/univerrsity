@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsSubject">
+
+    <cacheModel id="cmSubject" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <resultMap id="rmSubject" class="Subject">
+        <result property="id" column="id" nullValue="0"/>
+        <result property="name" column="name"/>
+    </resultMap>
+
+    <insert id="add" parameterClass="Subject">
+
+        INSERT INTO subject (
+            `name`
+        ) VALUES (
+            #name#
+        )
+
+        <selectKey keyProperty="id" resultClass="int">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+    <select id="getById" resultMap="rmSubject" parameterClass="int">
+        SELECT * FROM subject WHERE `id` = #id#
+    </select>
+
+    <select id="getByParams" resultMap="rmSubject" parameterClass="map">
+        SELECT * FROM subject  WHERE 1
+            <isNotNull property="id">
+                AND `id`= #id#
+            </isNotNull>
+            <isNotNull property="name">
+                AND `name`= #name#
+            </isNotNull>
+    </select>
+
+    <update id="update" parameterClass="CourseGroup">
+
+    UPDATE subject
+        SET
+            <isNotNull property="name">
+                `name` = #name#
+            </isNotNull>
+        WHERE
+            `id` =#id#
+
+    </update>
+
+
+    <delete id="remove" parameterClass="int">
+        DELETE FROM subject
+        WHERE id =#id#
+    </delete>
+    <!--
+    public void add(CourseGroup group) throws DatabaseException;
+    public CourseGroup getById(int id) throws DatabaseException;
+    public List<CourseGroup> getAll() throws DatabaseException;
+    public List<CourseGroup> getByParams(Map<String, Object> params) throws DatabaseException;
+    public void update(CourseGroup user) throws DatabaseException, EntityNotFoundException;
+    public void delete(int id) throws DatabaseException, EntityNotFoundException;
+    -->
+
+
+</sqlMap>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <constant name="struts.action.extension" value="htm"/>
+    <constant name="struts.objectFactory" value="spring"/>
+    <!--<constant name="struts.ui.theme" value="simple"/>-->
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <constant name="struts.custom.i18n.resources" value="com/university/web/config/resource/message"/>
+    <!--1048576(Bytes)= 1024 *1024 = 1Mb -->
+    <constant name="struts.multipart.maxSize" value="10485760"/>
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="general" extends="json-default" namespace="/">
+
+        <result-types>
+            <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"></result-type>
+        </result-types>
+
+        <!--The filtering language data-->
+        <!--<interceptors>
+
+            <interceptor name="language" class="com.university.web.action.general.interceptor.LanguageInterceptor"/>
+
+            <interceptor-stack name="generalStack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="language"/>
+            </interceptor-stack>
+
+        </interceptors>-->
+        <!--The default filter/interceptor, action and class -->
+        <!--<default-interceptor-ref name="generalStack"/>-->
+        <default-action-ref name="general"/>
+        <default-class-ref class="com.university.web.util.ShellAction"/>
+
+        <global-results>
+            <result name="InternalErrorException">/WEB-INF/pages/error/500.jsp</result>
+            <result name="login" type="redirect">general.htm</result>
+            <result name="error">/WEB-INF/pages/error/error.jsp</result>
+
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping exception="com.university.data_access.exception.InternalErrorException"
+                               result="InternalErrorException"/>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+
+        <action name="general" class="generalAction">
+            <result name="success" type="tiles">general</result>
+        </action>
+
+        <!--    Login   Logout  -->
+
+        <action name="login" class="login" method="execute">
+            <result name="admin" type="redirect">registration_admin.htm</result>
+            <result name="user" type="redirect">registration_user.htm</result>
+            <result name="input" type="tiles">general</result>
+        </action>
+
+        <action name="logout" class="com.university.web.action.general.Logout">
+            <result type="redirect">general.htm</result>
+        </action>
+
+        <action name="preRegistration" class="registration" method="preRegistration">
+            <result name="success" type="tiles">registration</result>
+        </action>
+
+        <!--    Registration    -->
+
+        <action name="registration" class="registration" method="execute">
+            <result name="admin" type="redirect">registration_admin.htm</result>
+            <result name="user" type="redirect">registration_user.htm</result>
+            <result name="input" type="tiles">registration</result>
+        </action>
+
+        <action name="registration_*">
+            <result type="tiles">{1}_layout</result>
+        </action>
+
+        <action name="download" class="download" method="execute">
+            <result name="success" type="stream">
+                <param name="contentType">application/octet-stream</param>
+                <param name="inputName">result</param>
+                <param name="contentDisposition">attachment;filename=${filePath}</param>
+            </result>
+        </action>
+        <!--
+        ####################################################################################################################
+        Universities
+        ####################################################################################################################
+        -->
+
+        <action name="pre_add_university" class="addUniversity" method="preExecute">
+            <result name="success" type="tiles">pre_add_university</result>
+        </action>
+
+        <action name="add_university" class="addUniversity" method="execute">
+            <result name="success" type="redirect">view_universities.htm</result>
+            <result name="input" type="tiles">pre_add_university</result>
+        </action>
+
+        <action name="view_universities" class="viewAllUniversities" method="execute">
+            <result name="success" type="tiles">view_all_universities</result>
+        </action>
+
+        <action name="pre_edit_university_info" class="editUniversityInfo" method="preExecute">
+            <result name="success" type="tiles">edit_university_info</result>
+        </action>
+
+        <action name="edit_university_info" class="editUniversityInfo" method="execute">
+            <result name="success" type="redirect">view_universities.htm</result>
+            <result name="input" type="tiles">edit_university_info</result>
+        </action>
+
+        <action name="edit_university" class="editUniversity" method="execute">
+            <result name="success" type="redirect">view_universities.htm</result>
+            <result name="input" type="tiles">view_all_universities</result>
+        </action>
+
+        <action name="remove_university" class="removeUniversity" method="execute">
+            <result name="success" type="redirect">view_universities.htm</result>
+            <result name="input" type="tiles">view_all_universities</result>
+        </action>
+
+        <!--
+        ####################################################################################################################
+        Departments
+        ####################################################################################################################
+        -->
+
+        <action name="pre_add_department" class="addDepartment" method="preExecute">
+            <result name="success" type="tiles">pre_add_department</result>
+        </action>
+
+        <action name="add_department" class="addDepartment" method="execute">
+            <result name="success" type="redirect">view_departments.htm</result>
+            <result name="input">pre_add_department.htm</result>
+        </action>
+
+        <action name="view_departments" class="viewAllDepartments" method="execute">
+            <result name="success" type="tiles">view_all_departments</result>
+        </action>
+
+        <action name="pre_edit_department_info" class="editDepartmentInfo" method="preExecute">
+            <result name="success" type="tiles">edit_department_info</result>
+        </action>
+
+        <action name="edit_department_info" class="editDepartmentInfo" method="execute">
+            <result name="success" type="redirect">view_departments.htm</result>
+            <result name="input">pre_edit_department_info.htm</result>
+        </action>
+
+        <action name="remove_department" class="removeDepartment" method="execute">
+            <result name="success" type="redirect">view_departments.htm</result>
+            <result name="input" type="tiles">view_all_departments</result>
+        </action>
+
+        <!--
+        ####################################################################################################################
+        Faculty
+        ####################################################################################################################
+        -->
+        <!--Ajax-->
+
+        <action name="select_university" class="selectUniversity" method="execute">
+            <result name="success" type="json"/>
+        </action>
+
+        <action name="select_department" class="selectDepartment" method="execute">
+            <result name="success" type="json"/>
+        </action>
+        <!--Actions-->
+        <action name="pre_add_faculty" class="addFaculty" method="preExecute">
+            <result name="success" type="tiles">pre_add_faculty</result>
+        </action>
+
+        <action name="add_faculty" class="addFaculty" method="execute">
+            <result name="success" type="redirect">view_faculties.htm</result>
+            <result name="input" type="tiles">pre_add_faculty</result>
+        </action>
+
+        <action name="view_faculties" class="viewAllFaculties" method="execute">
+            <result name="success" type="tiles">view_all_faculties</result>
+        </action>
+
+        <action name="edit_faculty" class="editFaculty" method="execute">
+            <result name="success" type="redirect">view_faculties.htm</result>
+            <result name="input">view_faculties.htm</result>
+        </action>
+
+        <action name="pre_edit_faculty_info" class="editFacultyInfo" method="preExecute">
+            <result name="success" type="tiles">edit_faculty_info</result>
+        </action>
+
+        <action name="edit_faculty_info" class="editFacultyInfo" method="execute">
+            <result name="success" type="redirect">view_faculties.htm</result>
+            <result name="input" type="tiles">edit_faculty_info</result>
+        </action>
+
+        <action name="remove_faculty" class="removeFaculty" method="execute">
+            <result name="success" type="redirect">view_faculties.htm</result>
+            <result name="input" type="tiles">view_all_faculties</result>
+        </action>
+
+        <!--
+        ####################################################################################################################
+        Faculty Degree
+        ####################################################################################################################
+        -->
+        <action name="view_and_download_docs" class="viewAndDownloadDocs" method="execute">
+            <result name="success" type="tiles">view_faculty_degrees</result>
+        </action>
+
+        <!--Ajax-->
+
+        <action name="pre_add_faculty_degree" class="addFacultyDegree" method="preExecute">
+            <result name="success" type="tiles">pre_add_faculty_degree</result>
+        </action>
+
+        <action name="add_faculty_degree" class="addFacultyDegree" method="execute">
+            <result name="success" type="redirect">view_and_download_docs.htm</result>
+            <result name="input" type="tiles">pre_add_faculty_degree</result>
+        </action>
+
+        <action name="select_faculty_degrees" class="selectFacultyDegrees" method="execute">
+            <result name="success" type="tiles">view_faculty_degrees</result>
+        </action>
+
+        <!--
+        ####################################################################################################################
+        ####################################################################################################################
+        Accounts
+        ####################################################################################################################
+        ####################################################################################################################
+        -->
+
+        <!--Groups-->
+        <action name="pre_add_course_group" class="addCourseGroup" method="preExecute">
+            <result name="success" type="tiles">pre_add_course_group</result>
+        </action>
+
+        <action name="add_course_group" class="addCourseGroup" method="execute">
+            <result name="success" type="redirect">view_course_groups.htm</result>
+            <result name="input" type="tiles">pre_add_course_group</result>
+        </action>
+
+        <action name="add_subjects_to_groups" class="addSubjectsToGroups" method="execute">
+            <result name="success" type="redirect">view_course_groups.htm</result>
+            <result name="input" type="tiles">view_course_groups</result>
+        </action>
+
+        <action name="view_course_groups" class="viewAllCourseGroups" method="execute">
+            <result name="success" type="tiles">view_course_groups</result>
+        </action>
+
+        <!--
+            Subject
+       -->
+        <action name="delete_group_subject" class="deleteGroupSubject" method="execute">
+            <result name="success" type="redirect">view_course_groups.htm</result>
+            <result name="input" type="tiles">view_course_groups</result>
+        </action>
+        <!--
+        Subject
+        -->
+
+        <action name="pre_add_subject" class="addSubject" method="preExecute">
+            <result name="success" type="tiles">pre_add_subject</result>
+        </action>
+
+        <action name="add_subject" class="addSubject" method="execute">
+            <result name="success" type="redirect">pre_add_subject.htm</result>
+            <result name="input" type="tiles">pre_add_subject</result>
+        </action>
+
+        <action name="delete_subject" class="deleteSubject" method="execute">
+            <result name="success" type="redirect">pre_add_subject.htm</result>
+            <result name="input" type="tiles">pre_add_subject</result>
+        </action>
+
+        <action name="edit_subject" class="editSubject" method="execute">
+            <result name="success" type="redirect">pre_add_subject.htm</result>
+            <result name="input" type="tiles">pre_add_subject</result>
+        </action>
+
+        <!--
+        Topic
+        -->
+        <!--Ajax-->
+        <action name="select_course_group" class="selectCourseGroup" method="execute">
+            <result name="success" type="json"/>
+        </action>
+
+        <action name="select_group_subjects_users" class="selectGroupSubjectsUsers" method="execute">
+            <result name="success" type="json"/>
+        </action>
+
+        <!--End Ajax-->
+
+        <action name="pre_add_topic" class="addTopic" method="preExecute">
+            <result name="success" type="tiles">pre_add_topic</result>
+        </action>
+
+        <action name="add_topic" class="addTopic" method="execute">
+            <result name="success" type="tiles">pre_add_topic</result>
+        </action>
+        <!--
+        ####################################################################################################################
+        ####################################################################################################################
+        Quiz
+        ####################################################################################################################
+        ####################################################################################################################
+        -->
+        <action name="select_group_subjects" class="selectGroupSubjects" method="execute">
+            <result name="success" type="json"/>
+        </action>
+
+        <action name="pre_add_question" class="addQuestion" method="preExecute">
+            <result name="success" type="tiles">pre_add_question</result>
+        </action>
+
+        <action name="add_question" class="addQuestion" method="execute">
+            <result name="success" type="tiles">pre_add_question</result>
+        </action>
+
+    </package>
+
+</struts>

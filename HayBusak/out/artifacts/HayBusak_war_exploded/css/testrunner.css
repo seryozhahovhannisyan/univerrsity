@@ -1,0 +1,56 @@
+.testrunner { padding-top: 12px; }
+
+.testrunner p.red { color: red; }
+
+.testrunner .question {
+    margin-left:160px;
+    width: auto;
+}
+
+.testrunner .question .q-text { font-size:1.3em; white-space:normal; zoom:1; }
+
+.testrunner .question .answers {}
+.testrunner .question .buttons {}
+.testrunner .question .answers { margin: 11px 0; }
+.testrunner .question .answers li { margin: 11px 0; padding-left:25px; zoom:1;}
+.testrunner .question .answers li label { cursor:pointer; color:black; margin-left:5px; }
+.testrunner .question .answers li input { margin-left:-20px; }
+
+.testrunner .sidebar {
+    float: left;
+    margin-left:20px;
+    width:110px;
+}
+
+.testrunner .sidebar .items { display: block;}
+.testrunner .sidebar .items li {
+    margin: 5px 0;
+    display:block; height:18px;
+    cursor:pointer;
+    padding: 0 23px 0 0;
+}
+.testrunner .sidebar .items li b {
+    display:block; height:18px;
+    background: url( /icon/general/left_menu/question-item.gif ) no-repeat;
+}
+.testrunner .sidebar .items li b b {
+    background: url( /icon/general/left_menu/question-item.gif ) no-repeat right -18px;
+    color:white;
+    padding: 0 10px;
+}
+.testrunner .sidebar .items li.current b { background: url( /icon/general/left_menu/question-item.gif ) no-repeat 0 -36px; }
+.testrunner .sidebar .items li.current b b { background: url( /icon/general/left_menu/question-item.gif ) no-repeat right -54px; }
+
+.testrunner .sidebar .items li.answered {
+    background: url( /icon/general/left_menu/answered-blue.gif ) no-repeat right;
+    padding: 0 23px 0 0;
+}
+
+.testrunner .sidebar .timer {
+    height:18px;
+    font-weight:bold;
+    margin: 0 0 0 10px;
+}
+
+.testrunner .sidebar .buttons {}
+

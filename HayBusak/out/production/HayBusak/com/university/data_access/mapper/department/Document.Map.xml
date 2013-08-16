@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsDocument">
+
+    <cacheModel id="cmDocument" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <cacheModel id="cmDocumentInfo" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <resultMap id="rmDocument" class="Document">
+        <result property="id" column="id" nullValue="0"/>
+        <result property="documentType" column="type_id"/>
+        <result property="serialNumber" column="serial_number"/>
+        <result property="confirmDate" column="confirm_date"/>
+        <result property="path" column="path"/>
+        <result property="documentInfos" column="id" select="nsDocument.getByDocumentId"/>
+    </resultMap>
+
+    <resultMap id="rmDocInfo" class="Document">
+        <result property="id" column="doc_id" nullValue="0"/>
+        <result property="documentType" column="doc_type_id"/>
+        <result property="serialNumber" column="doc_serial_number"/>
+        <result property="confirmDate" column="doc_confirm_date"/>
+        <result property="path" column="doc_path"/>
+
+        <result property="about" column="doc_about"/>
+    </resultMap>
+
+    <resultMap id="rmDocumentInfo" class="DocumentInfo">
+        <result property="about" column="about"/>
+        <result property="documentId" column="document_id"/>
+        <result property="language" column="lang_id"/>
+    </resultMap>
+
+    <select id="getByDocumentId" resultMap="rmDocumentInfo" parameterClass="int">
+        SELECT * FROM document_info WHERE document_id =#documentId#
+    </select>
+
+    <insert id="add" parameterClass="Document">
+
+        INSERT INTO document (
+            `type_id`,
+            `serial_number`,
+            `confirm_date`,
+            `path`
+        ) VALUES (
+            #documentType#,
+            #serialNumber#,
+            #confirmDate#,
+            #path#
+        )
+
+        <selectKey keyProperty="id" resultClass="int">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+    <insert id="addInfos" parameterClass="map">
+        INSERT
+            INTO document_info (
+            `about`,
+            `document_id`,
+            `lang_id`
+        )VALUES
+        <iterate property="infos" conjunction=",">
+            (
+            #infos[].about#,
+            #infos[].documentId#,
+            #infos[].language#
+            )
+        </iterate>
+
+    </insert>
+
+    <insert id="addInfo" parameterClass="DocumentInfo">
+
+        INSERT INTO department_info (
+            `about`,
+            `document_id`,
+            `lang_id`
+        ) VALUES (
+            #about#,
+            #documentId#,
+            #language#
+        )
+
+    </insert>
+
+
+    <select id="getById"
+            cacheModel="cmDocument"
+            parameterClass="int"
+            resultMap="rmDocument">
+
+        SELECT * FROM document WHERE id =#id#
+
+
+    </select>
+
+    <!--<select id="getDepartmentInfoCountByName"
+            cacheModel="cmDepartment"
+            resultClass="int"
+            parameterClass="string">
+
+        SELECT COUNT(*)  FROM department_info WHERE `name`=#name#
+
+    </select>-->
+
+    <select id="getAll"
+            cacheModel="cmDocument"
+            parameterClass="int"
+            resultMap="rmDocument">
+
+        SELECT * FROM document
+
+    </select>
+
+    <select id="getByParams"
+            cacheModel="cmDocument"
+            resultMap="rmDocument">
+
+        SELECT * FROM document WHERE 1
+        <isNotNull property="name">
+            AND name = #name#
+        </isNotNull>
+
+    </select>
+
+
+    <update id="edit" parameterClass="Document">
+
+        UPDATE document
+        SET
+            `type_id` = #documentType#,
+            `serial_number` = #serialNumber#,
+            `confirm_date` = #confirmDate#,
+            `path` = #path#,
+        WHERE
+            id =#id#
+
+    </update>
+
+    <update id="editInfo" parameterClass="DocumentInfo">
+
+        UPDATE document_info
+        SET
+            `about` = #about#,
+        WHERE
+            `document_id` =#documentId# AND
+            `lang_id`=#language#
+    </update>
+
+
+    <delete id="remove" parameterClass="int">
+        DELETE FROM document
+        WHERE id =#id#
+    </delete>
+
+    <delete id="removeInfo" parameterClass="map">
+        DELETE FROM document_info WHERE `document_id` =#documentId# AND
+                                        `lang_id`=#language#
+    </delete>
+
+
+</sqlMap>

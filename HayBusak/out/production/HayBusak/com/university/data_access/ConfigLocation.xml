@@ -1,0 +1,92 @@
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+
+    <!--<properties resource="com.university.config/db-com.university.config.properties"/>-->
+
+    <settings cacheModelsEnabled="false"
+              enhancementEnabled="true"
+              lazyLoadingEnabled="false"
+              errorTracingEnabled="true"
+              useStatementNamespaces="true"/>
+
+    <!--
+    ####################################################################################################################
+    Type Aliases
+    ####################################################################################################################
+    -->
+    <!--lcp general-->
+    <typeAlias alias="Language" type="com.university.model.general.lcp.Language"/>
+    <!--lcp Account Package-->
+    <typeAlias alias="AcademicDegreeCourse" type="com.university.model.account.lcp.AcademicDegreeCourse"/>
+    <typeAlias alias="Profile" type="com.university.model.account.lcp.Profile"/>
+    <!--lcp Department Package-->
+    <typeAlias alias="AcademicDegree" type="com.university.model.department.lcp.AcademicDegree"/>
+    <typeAlias alias="AcademicDegreeInfo" type="com.university.model.department.lcp.AcademicDegreeInfo"/>
+    <typeAlias alias="DocumentType" type="com.university.model.department.lcp.DocumentType"/>
+    <typeAlias alias="DocumentTypeInfo" type="com.university.model.department.lcp.DocumentTypeInfo"/>
+    <typeAlias alias="ReportType" type="com.university.model.department.lcp.ReportType"/>
+    <!--Department Package-->
+    <typeAlias alias="Department" type="com.university.model.department.Department"/>
+    <typeAlias alias="DepartmentInfo" type="com.university.model.department.DepartmentInfo"/>
+    <typeAlias alias="Document" type="com.university.model.department.Document"/>
+    <typeAlias alias="DocumentInfo" type="com.university.model.department.DocumentInfo"/>
+    <typeAlias alias="Faculty" type="com.university.model.department.Faculty"/>
+    <typeAlias alias="FacultyDegree" type="com.university.model.department.FacultyDegree"/>
+    <typeAlias alias="FacultyInfo" type="com.university.model.department.FacultyInfo"/>
+    <!--<typeAlias alias="Report" type="com.university.department.Report" />-->
+    <!--<typeAlias alias="Report" type="com.university.department.ReportInfo" />-->
+    <typeAlias alias="University" type="com.university.model.department.University"/>
+    <typeAlias alias="UniversityInfo" type="com.university.model.department.UniversityInfo"/>
+    <!--Account Package-->
+    <typeAlias alias="CourseGroup" type="com.university.model.account.CourseGroup"/>
+    <typeAlias alias="GroupSubject" type="com.university.model.account.GroupSubject"/>
+    <typeAlias alias="Subject" type="com.university.model.account.Subject"/>
+    <typeAlias alias="Topic" type="com.university.model.account.Topic"/>
+    <typeAlias alias="User" type="com.university.model.account.User"/>
+    
+    
+    <!--
+    ####################################################################################################################
+    Type Handlers
+    ####################################################################################################################
+    -->
+    <!--General Package-->
+    <typeHandler javaType="com.university.model.general.lcp.Language" callback="com.university.data_access.extension.LanguageHandler"/>
+
+    <!--Account Package-->
+    <typeHandler javaType="com.university.model.account.lcp.AcademicDegreeCourse"
+                 callback="com.university.data_access.extension.account.AcademicDegreeCourseHandler"/>
+    <typeHandler javaType="com.university.model.account.lcp.Profile"
+                 callback="com.university.data_access.extension.account.ProfileHandler"/>
+    <!--University Package-->
+    <typeHandler javaType="com.university.model.department.lcp.AcademicDegree"
+                 callback="com.university.data_access.extension.department.AcademicDegreeHandler"/>
+
+    <typeHandler javaType="com.university.model.department.lcp.DocumentType"
+                 callback="com.university.data_access.extension.department.DocumentTypeHandler"/>
+
+    <typeHandler javaType="com.university.model.department.lcp.ReportType"
+                 callback="com.university.data_access.extension.department.ReportTypeHandler"/>
+
+    <!--
+    ####################################################################################################################
+    Sql Maps
+    ####################################################################################################################
+    -->
+
+    <!--University Package-->
+    <sqlMap resource="com/university/data_access/mapper/department/Department.Map.xml"/>
+    <sqlMap resource="com/university/data_access/mapper/department/Document.Map.xml"/>
+    <sqlMap resource="com/university/data_access/mapper/department/Faculty.Map.xml"/>
+    <sqlMap resource="com/university/data_access/mapper/department/FacultyDegree.Map.xml"/>
+    <sqlMap resource="com/university/data_access/mapper/department/University.Map.xml"/>
+    <!--University Package-->
+    <sqlMap resource="com/university/data_access/mapper/account/Subject.Map.xml"/>
+    <sqlMap resource="com/university/data_access/mapper/account/CourseGroup.Map.xml"/>
+    <sqlMap resource="com/university/data_access/mapper/account/GroupSubject.Map.xml"/>
+    <sqlMap resource="com/university/data_access/mapper/account/User.Map.xml"/>
+    <sqlMap resource="com/university/data_access/mapper/account/Topic.Map.xml"/>
+
+</sqlMapConfig>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--
+    ####################################################################################################################
+    General
+    ####################################################################################################################
+    -->
+
+    <bean id="generalAction" class="com.university.web.action.general.GeneralAction" scope="prototype">
+        <property name="universityManager" ref="universityManager"/>
+    </bean>
+
+    <bean id="responseDto" class="com.university.web.util.ResponseDto"/>
+
+    <bean id="download" class="com.university.web.action.general.Download" scope="prototype">
+        <property name="dataStorage" ref="dataStorage"/>
+    </bean>
+
+    <bean id="login" class="com.university.web.action.general.Login" scope="prototype">
+        <property name="userManager" ref="userManager"/>
+    </bean>
+
+    <bean id="registration" class="com.university.web.action.general.Registration" scope="prototype">
+        <property name="userManager" ref="userManager"/>
+    </bean>
+
+    <!--
+    ####################################################################################################################
+    Universities
+    ####################################################################################################################
+    -->
+
+    <bean id="addUniversity" class="com.university.web.action.admin.department.AddUniversity" scope="prototype">
+        <property name="universityManager" ref="universityManager"/>
+    </bean>
+
+    <bean id="viewAllUniversities" class="com.university.web.action.admin.department.ViewAllUniversities"
+          scope="prototype">
+
+    </bean>
+
+    <bean id="editUniversity" class="com.university.web.action.admin.department.EditUniversity" scope="prototype">
+        <property name="universityManager" ref="universityManager"/>
+    </bean>
+
+    <bean id="editUniversityInfo" class="com.university.web.action.admin.department.EditUniversityInfo"
+          scope="prototype">
+        <property name="universityManager" ref="universityManager"/>
+    </bean>
+
+    <bean id="removeUniversity" class="com.university.web.action.admin.department.RemoveUniversity" scope="prototype">
+        <property name="universityManager" ref="universityManager"/>
+    </bean>
+
+    <!--
+    ####################################################################################################################
+    Departments
+    ####################################################################################################################
+    -->
+
+    <bean id="viewAllDepartments" class="com.university.web.action.admin.department.ViewAllDepartments"
+          scope="prototype">
+        <property name="departmentManager" ref="departmentManager"/>
+        <property name="universityManager" ref="universityManager"/>
+    </bean>
+
+    <bean id="addDepartment" class="com.university.web.action.admin.department.AddDepartment" scope="prototype">
+        <property name="departmentManager" ref="departmentManager"/>
+    </bean>
+
+    <bean id="removeDepartment" class="com.university.web.action.admin.department.RemoveDepartment" scope="prototype">
+        <property name="departmentManager" ref="departmentManager"/>
+    </bean>
+
+    <bean id="editDepartmentInfo" class="com.university.web.action.admin.department.EditDepartmentInfo"
+          scope="prototype">
+        <property name="departmentManager" ref="departmentManager"/>
+    </bean>
+
+    <!--
+    ####################################################################################################################
+    Faculties
+    ####################################################################################################################
+    -->
+    <bean id="addFaculty" class="com.university.web.action.admin.department.AddFaculty" scope="prototype">
+        <property name="facultyManager" ref="facultyManager"/>
+    </bean>
+
+    <bean id="selectUniversity" class="com.university.web.action.admin.department.ajax.SelectUniversity"
+          scope="prototype">
+        <property name="departmentManager" ref="departmentManager"/>
+        <property name="responseDto" ref="responseDto"/>
+    </bean>
+
+    <bean id="selectDepartment" class="com.university.web.action.admin.department.ajax.SelectDepartment"
+          scope="prototype">
+        <property name="facultyManager" ref="facultyManager"/>
+        <property name="responseDto" ref="responseDto"/>
+    </bean>
+
+    <bean id="viewAllFaculties" class="com.university.web.action.admin.department.ViewAllFaculties" scope="prototype">
+        <property name="universityManager" ref="universityManager"/>
+    </bean>
+
+    <bean id="editFaculty" class="com.university.web.action.admin.department.EditFaculty" scope="prototype">
+        <property name="facultyManager" ref="facultyManager"/>
+    </bean>
+
+    <bean id="editFacultyInfo" class="com.university.web.action.admin.department.EditFacultyInfo" scope="prototype">
+        <property name="facultyManager" ref="facultyManager"/>
+    </bean>
+
+    <bean id="removeFaculty" class="com.university.web.action.admin.department.RemoveFaculty" scope="prototype">
+        <property name="facultyManager" ref="facultyManager"/>
+    </bean>
+
+    <!--
+    ####################################################################################################################
+    Degrees
+    ####################################################################################################################
+    -->
+
+    <bean id="viewAndDownloadDocs" class="com.university.web.action.admin.department.ViewAndDownloadDocs"
+          scope="prototype">
+        <property name="degreeManager" ref="facultyDegreeManager"/>
+    </bean>
+
+    <bean id="addFacultyDegree" class="com.university.web.action.admin.department.AddFacultyDegree" scope="prototype">
+        <property name="degreeManager" ref="facultyDegreeManager"/>
+    </bean>
+
+    <bean id="selectFacultyDegrees" class="com.university.web.action.admin.department.ajax.SelectFacultyDegrees"
+          scope="prototype">
+        <property name="degreeManager" ref="facultyDegreeManager"/>
+        <property name="responseDto" ref="responseDto"/>
+    </bean>
+
+    <!--
+   ####################################################################################################################
+   Accounts
+   ####################################################################################################################
+   -->
+
+    <bean id="addCourseGroup" class="com.university.web.action.admin.account.AddCourseGroup" scope="prototype">
+        <property name="groupManager" ref="courseGroupManager"/>
+    </bean>
+
+    <bean id="addSubjectsToGroups" class="com.university.web.action.admin.account.AddSubjectsToGroups"
+          scope="prototype">
+        <!--<property name="groupManager" ref="courseGroupManager"/>-->
+        <property name="groupSubjectManager" ref="groupSubjectManager"/>
+    </bean>
+
+    <bean id="viewAllCourseGroups" class="com.university.web.action.admin.account.ViewAllCourseGroups"
+          scope="prototype">
+        <property name="groupManager" ref="courseGroupManager"/>
+        <property name="subjectManager" ref="subjectManager"/>
+        <property name="groupSubjectManager" ref="groupSubjectManager"/>
+    </bean>
+
+    <!--GroupSubject-->
+
+    <bean id="deleteGroupSubject" class="com.university.web.action.admin.account.subject.DeleteGroupSubject"
+          scope="prototype">
+        <property name="groupSubjectManager" ref="groupSubjectManager"/>
+    </bean>
+
+    <!--User-->
+
+    <!--Subjects-->
+
+    <bean id="addSubject" class="com.university.web.action.admin.account.subject.AddSubject" scope="prototype">
+        <property name="subjectManager" ref="subjectManager"/>
+    </bean>
+
+    <bean id="deleteSubject" class="com.university.web.action.admin.account.subject.DeleteSubject" scope="prototype">
+        <property name="subjectManager" ref="subjectManager"/>
+    </bean>
+
+    <bean id="editSubject" class="com.university.web.action.admin.account.subject.EditSubject" scope="prototype">
+        <property name="subjectManager" ref="subjectManager"/>
+    </bean>
+
+    <!--Topic-->
+
+    <bean id="addTopic" class="com.university.web.action.admin.account.topic.AddTopic" scope="prototype">
+        <property name="topicManager" ref="topicManager"/>
+    </bean>
+    <!--Ajax-->
+    <bean id="selectCourseGroup" class="com.university.web.action.admin.account.ajax.SelectCourseGroup"
+          scope="prototype">
+        <property name="courseGroupManager" ref="courseGroupManager"/>
+        <property name="responseDto" ref="responseDto"/>
+    </bean>
+
+    <bean id="selectGroupSubjectsUsers" class="com.university.web.action.admin.account.ajax.SelectGroupSubjectsUsers"
+          scope="prototype">
+        <property name="groupSubjectManager" ref="groupSubjectManager"/>
+        <property name="userManager" ref="userManager"/>
+        <property name="responseDto" ref="responseDto"/>
+    </bean>
+
+    <bean id="selectGroupSubjects" class="com.university.web.action.admin.account.ajax.SelectGroupSubjects"
+          scope="prototype">
+        <property name="groupSubjectManager" ref="groupSubjectManager"/>
+        <property name="responseDto" ref="responseDto"/>
+    </bean>
+
+    <!--
+    ####################################################################################################################
+    ####################################################################################################################
+    Quiz
+    ####################################################################################################################
+    ####################################################################################################################
+    -->
+    <bean id="addQuestion" class="com.university.web.action.admin.quiz.AddQuestion" scope="prototype">
+        <property name="questionManager"  ref="questionManager"/>
+    </bean>
+
+    <!--
+    ####################################################################################################################
+    ####################################################################################################################
+    ####################################################################################################################
+    USERS
+    ####################################################################################################################
+    ####################################################################################################################
+    ####################################################################################################################
+    -->
+
+    <bean id="user_viewTopics" class="com.university.web.action.user.ViewTopics" scope="prototype">
+        <property name="topicManager"  ref="topicManager"/>
+    </bean>
+
+</beans>

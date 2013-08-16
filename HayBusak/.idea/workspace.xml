@@ -1,0 +1,2242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" name="Default" comment="" />
+    <ignored path="HayBusak.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/pom.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375385896051" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/conf/dgs3g.properties" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375387397823" ignored="false" />
+    <file path="$PROJECT_DIR$/../University/src/com/university/config/resource/message_hy.properties" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375388855519" ignored="false" />
+    <file path="/message_hy.properties" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375809763045" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_axis2_axis2_1_6_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_el_commons_el_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__net_sf_ehcache_ehcache_1_2_3.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_ws_commons_schema_XmlSchema_1_3_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javax_faces_jsf_impl_1_2_13.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javax_el_el_api_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_core_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_primefaces_primefaces_1_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205093" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_0_5_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_javamail_1_4_spec_1_7_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_quartz_scheduler_quartz_weblogic_2_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_5_8.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_woden_woden_impl_dom_1_0M9.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_hibernate_hibernate_validator_3_0_0_ga.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_8.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_1_0_GA.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_woden_woden_impl_commons_1_0M9.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_3_4_0_GA.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__jaxen_jaxen_1_1_3.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_ws_commons_axiom_axiom_api_1_2_13.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_test_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_ws_commons_axiom_axiom_impl_1_2_13.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_hibernate_hibernate_3_2_6_ga.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_richfaces_framework_richfaces_impl_3_3_3_Final.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_0_5_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_aop_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__com_damaris_threeg_clipBarcode_dgs3g_clip_barcode_1_0_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_orm_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_quartz_scheduler_quartz_jboss_2_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_expression_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_aspects_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_codec_commons_codec_1_3.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_richfaces_ui_richfaces_ui_3_3_3_Final.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_pool_commons_pool_1_3.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_tika_tika_core_1_3.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_context_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_stax_api_1_0_spec_1_0_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_2_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__antlr_antlr_2_7_6.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_ldap_spring_ldap_core_1_3_0_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_0_5_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_woden_woden_api_1_0M9.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__com_itextpdf_itextpdf_5_0_4.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_jasypt_jasypt_1_6.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_axis2_axis2_transport_http_1_6_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_5_8.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__net_sourceforge_jtds_jtds_1_2_4.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_jdbc_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__asm_asm_3_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__junit_junit_4_7.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__net_sourceforge_javacsv_javacsv_2_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_quartz_scheduler_quartz_oracle_2_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_asm_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_codehaus_woodstox_wstx_asl_3_2_9.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_neethi_neethi_3_0_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_web_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__com_damaris_threeg_archive_importing_dgs3g_archive_import_1_0_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_context_support_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_beans_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_junit_com_springsource_org_junit_4_7_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__wsdl4j_wsdl4j_1_6_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javassist_javassist_3_4_GA.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__axis_axis_wsdl4j_1_5_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javax_persistence_persistence_api_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_6_7.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_hibernate_ejb3_persistence_1_0_2_GA.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_io_commons_io_1_4.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_ldap_spring_ldap_core_tiger_1_3_0_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_hibernate_hibernate_annotations_3_4_0_GA.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_axis2_axis2_transport_local_1_6_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_aspectj_aspectjrt_1_6_7.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javax_servlet_jstl_1_1_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__com_sun_facelets_jsf_facelets_1_1_15.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_james_apache_mime4j_core_0_7_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_hibernate_hibernate_core_3_3_0_SP1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_richfaces_framework_richfaces_api_3_3_3_Final.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0_1_0.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_axis2_axis2_kernel_1_6_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_springframework_spring_tx_3_0_2_RELEASE.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_ws_metadata_2_0_spec_1_1_2.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_aspectj_aspectjtools_1_6_7.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__javax_faces_jsf_api_1_2_13.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_activation_1_1_spec_1_1.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375386205094" ignored="false" />
+    <file path="$PROJECT_DIR$/../University/.idea/workspace.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375415103873" ignored="false" />
+    <file path="$PROJECT_DIR$/../University/dataaccess/src/com/university/config/dataaccess.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375387397823" ignored="false" />
+    <file path="$PROJECT_DIR$/../University/src/com/university/config/resource/message.properties" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375387397823" ignored="false" />
+    <file path="$PROJECT_DIR$/../University/dataaccess/src/com/university/config/db-config.properties" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375387397823" ignored="false" />
+    <file path="$PROJECT_DIR$/../University/dataaccess/src/com/university/config/email_config.properties" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375387397823" ignored="false" />
+    <file path="$PROJECT_DIR$/../University/src/struts.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375387397823" ignored="false" />
+    <file path="$PROJECT_DIR$/../University/web/WEB-INF/tiles.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375387397823" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/labelManager/pom.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375390014022" ignored="false" />
+    <file path="$PROJECT_DIR$/../University/web/WEB-INF/pages/general/general.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375406783339" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/university/dataaccess/util/DataStorage.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375407570337" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/university/dataaccess/util/ConstantGeneral.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375407570337" ignored="false" />
+    <file path="/IFacultyDegreeManager.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375600980018" ignored="false" />
+    <file path="/IFacultyManager.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375408140945" ignored="false" />
+    <file path="/IReportManager.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375408163665" ignored="false" />
+    <file path="/DepartmentManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375408205562" ignored="false" />
+    <file path="/ConfigLocation.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376051232391" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/university/action/admin/department/ajax/SelectUniversity.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375409824393" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/university/action/admin/department/ajax/SelectDepartment.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375409824393" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/university/action/admin/department/ajax/SelectFacultyDegrees.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375409824393" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/university/action/general/interceptor/AdminAuthInterceptor.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375409824393" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/university/action/general/interceptor/LanguageInterceptor.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375409824393" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/university/action/general/interceptor/UserAuthInterceptor.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375409824393" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/university/action/general/interceptor/ModeratorAuthInterceptor.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375409824393" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/university/action/general/interceptor/StudentAuthInterceptor.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375409824393" ignored="false" />
+    <file path="/IUserManager.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376254861330" ignored="false" />
+    <file path="/fragment.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376534166040" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../dimplom/2/SpyServer/SpyServer/dataaccess/src/service/impl/UserManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375411854971" ignored="false" />
+    <file path="/Logout.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375412200097" ignored="false" />
+    <file path="/Registration.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375412242104" ignored="false" />
+    <file path="/dataaccess.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375412452427" ignored="false" />
+    <file path="/dbacceess.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375412536737" ignored="false" />
+    <file path="/manager.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376342026400" ignored="false" />
+    <file path="/presentation.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376534018987" ignored="false" />
+    <file path="/admin.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375412809074" ignored="false" />
+    <file path="/adminAuth.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375412839394" ignored="false" />
+    <file path="/applicationContext.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375413570721" ignored="false" />
+    <file path="/struts.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376534379034" ignored="false" />
+    <file path="/index.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375414934036" ignored="false" />
+    <file path="/add_university.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375520341543" ignored="false" />
+    <file path="/log4j.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375550328799" ignored="false" />
+    <file path="/general.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375523097584" ignored="false" />
+    <file path="/GeneralAction.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375541652368" ignored="false" />
+    <file path="/Initializer.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375540593054" ignored="false" />
+    <file path="/ViewAllUniversities.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375535668943" ignored="false" />
+    <file path="/AddUniversity.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375567428319" ignored="false" />
+    <file path="/EditUniversity.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375563990080" ignored="false" />
+    <file path="/UniversityManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375564854400" ignored="false" />
+    <file path="/IUniversityManager.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375534688336" ignored="false" />
+    <file path="/RemoveUniversity.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375534890164" ignored="false" />
+    <file path="/CommonValidator.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375535295215" ignored="false" />
+    <file path="/DataStorage.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375578715057" ignored="false" />
+    <file path="/view_all_universities.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375563266750" ignored="false" />
+    <file path="/data_access.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376341784800" ignored="false" />
+    <file path="/UserDaoImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376061854372" ignored="false" />
+    <file path="/tiles.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376447872492" ignored="false" />
+    <file path="/ConstantGeneral.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375742382273" ignored="false" />
+    <file path="/LanguageInterceptor.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375540024160" ignored="false" />
+    <file path="/ShellAction.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375554135299" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../dimplom/2/SpyServer/SpyServer/src/struts.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375541936546" ignored="false" />
+    <file path="/header.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375545873298" ignored="false" />
+    <file path="/user_info.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375548428720" ignored="false" />
+    <file path="/Test.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375610523266" ignored="false" />
+    <file path="/AddDepartment.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375566176191" ignored="false" />
+    <file path="/AddFaculty.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375570937398" ignored="false" />
+    <file path="/add_faculty.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375571068937" ignored="false" />
+    <file path="/FacultyManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375570114949" ignored="false" />
+    <file path="/AddFacultyDegree.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375579322610" ignored="false" />
+    <file path="/add_faculty_degree.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375572603804" ignored="false" />
+    <file path="/FacultyDegreeManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375598787539" ignored="false" />
+    <file path="/ViewAndDownloadDocs.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375606514278" ignored="false" />
+    <file path="/FacultyDegreeDaoImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375601369553" ignored="false" />
+    <file path="/FacultyDegree.Map.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375607762851" ignored="false" />
+    <file path="/FacultyDegreeManagerTest.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375604078210" ignored="false" />
+    <file path="/Document.Map.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375607495095" ignored="false" />
+    <file path="/view_and_download_docs.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375739755666" ignored="false" />
+    <file path="/Download.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375612658230" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../dimplom/2/SpyServer/SpyServer/src/am/gitc/spy/action/admin/library/BookDownload.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375609748021" ignored="false" />
+    <file path="/User.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375626893450" ignored="false" />
+    <file path="/CourseGroup.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375626854851" ignored="false" />
+    <file path="/ICourseGroupManager.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375813127383" ignored="false" />
+    <file path="/CourseGroupDaoImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375813878167" ignored="false" />
+    <file path="/CourseGroupManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375814032764" ignored="false" />
+    <file path="/CourseGroup.Map.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376077824643" ignored="false" />
+    <file path="/ProfileHandler.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375634169792" ignored="false" />
+    <file path="/banner_rigth.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375643816645" ignored="false" />
+    <file path="/banner_right.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376453175034" ignored="false" />
+    <file path="/add_course_group.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376043450456" ignored="false" />
+    <file path="/AddCourseGroup.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375732950720" ignored="false" />
+    <file path="/ViewAllCourseGroups.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376044679311" ignored="false" />
+    <file path="/view_faculty_degrees.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375733969668" ignored="false" />
+    <file path="/ShellTest.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376058011268" ignored="false" />
+    <file path="/CourseGroupManagerTest.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376084892885" ignored="false" />
+    <file path="/view_course_groups.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376048910634" ignored="false" />
+    <file path="/Subject.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375736617988" ignored="false" />
+    <file path="/ISubjectManager.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375736744706" ignored="false" />
+    <file path="/ISubjectDao.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375736803728" ignored="false" />
+    <file path="/SubjectManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375737440130" ignored="false" />
+    <file path="/Subject.Map.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375737613442" ignored="false" />
+    <file path="/SubjectDaoImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375737938338" ignored="false" />
+    <file path="/AddSubject.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375742393201" ignored="false" />
+    <file path="/add_subject.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376041897010" ignored="false" />
+    <file path="/DeleteSubject.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375739915968" ignored="false" />
+    <file path="/EditSubject.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375740088436" ignored="false" />
+    <file path="/AddSubjectsToGroups.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375913724550" ignored="false" />
+    <file path="/Topic.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375911041330" ignored="false" />
+    <file path="/ITopicManager.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375826322682" ignored="false" />
+    <file path="/ITopicDao.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376254817222" ignored="false" />
+    <file path="/TopicDaoImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376254744779" ignored="false" />
+    <file path="/TopicManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376254940341" ignored="false" />
+    <file path="/GroupSubject.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375914134178" ignored="false" />
+    <file path="/IGroupSubjecttManager.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375912316546" ignored="false" />
+    <file path="/GroupSubjectDaoImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375916784419" ignored="false" />
+    <file path="/GroupSubjectManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1375913037508" ignored="false" />
+    <file path="/GroupSubject.Map.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376052309059" ignored="false" />
+    <file path="/Topic.Map.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376254751955" ignored="false" />
+    <file path="/DeleteGroupSubject.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376048125315" ignored="false" />
+    <file path="/AddTopic.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376252262933" ignored="false" />
+    <file path="/User.Map.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376062688391" ignored="false" />
+    <file path="/UserManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376061598405" ignored="false" />
+    <file path="/IUserDao.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376055806627" ignored="false" />
+    <file path="/UserDaoTest.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376059968035" ignored="false" />
+    <file path="/UserManagerTest.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376062932420" ignored="false" />
+    <file path="/Login.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376062080436" ignored="false" />
+    <file path="/ViewAllTopics.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376063870435" ignored="false" />
+    <file path="/admin_actions.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376540093690" ignored="false" />
+    <file path="/admin_actions.css" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376539855145" ignored="false" />
+    <file path="/add_topic.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376249991935" ignored="false" />
+    <file path="/SelectUniversity.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376077864409" ignored="false" />
+    <file path="/SelectCourseGroup.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376077797718" ignored="false" />
+    <file path="/SelectGroupSubject.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376242580691" ignored="false" />
+    <file path="/ViewTopics.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376256537715" ignored="false" />
+    <file path="/QuestionType.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376257503955" ignored="false" />
+    <file path="/QuestionTypeInfo.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376257467829" ignored="false" />
+    <file path="/Question.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376341096192" ignored="false" />
+    <file path="/Dummy.txt" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376281153376" ignored="false" />
+    <file path="/a.dummy" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376279055032" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../Domaris/dgs3g_jsf/dgs3g_web/src/main/webapp/WEB-INF/web.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376279841135" ignored="false" />
+    <file path="$PROJECT_DIR$/../MvnTestWeB/.idea/workspace.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376281030084" ignored="false" />
+    <file path="$PROJECT_DIR$/../MvnTestWeB/.idea/compiler.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376281030084" ignored="false" />
+    <file path="$PROJECT_DIR$/../sss/pom.xml" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376281042490" ignored="false" />
+    <file path="/Type.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376330179748" ignored="false" />
+    <file path="/Answer.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376339391664" ignored="false" />
+    <file path="/UserQuiz.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376339968993" ignored="false" />
+    <file path="/IQuestionManager.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376341628496" ignored="false" />
+    <file path="/QuestionDaoImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376341717786" ignored="false" />
+    <file path="/QuestionManagerImpl.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376341958175" ignored="false" />
+    <file path="/AddQuestion.java" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376535327950" ignored="false" />
+    <file path="/add_question.jsp" changelist="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" time="1376535048656" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/data_access/exception/InternalErrorException.java" line="8" class="com.university.data_access.exception.InternalErrorException" package="com.university.data_access.exception">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/general/Login.java" line="48" class="com.university.web.action.general.Login" package="com.university.web.action.general">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/general/Login.java" line="51" class="com.university.web.action.general.Login" package="com.university.web.action.general">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/RemoveUniversity.java" line="35" class="com.university.web.action.admin.department.RemoveUniversity" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/RemoveUniversity.java" line="40" class="com.university.web.action.admin.department.RemoveUniversity" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/EditUniversity.java" line="88" class="com.university.web.action.admin.department.EditUniversity" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/EditUniversity.java" line="45" class="com.university.web.action.admin.department.EditUniversity" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/AddUniversity.java" line="89" class="com.university.web.action.admin.department.AddUniversity" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/AddUniversity.java" line="65" class="com.university.web.action.admin.department.AddUniversity" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/EditUniversity.java" line="48" class="com.university.web.action.admin.department.EditUniversity" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/AddDepartment.java" line="51" class="com.university.web.action.admin.department.AddDepartment" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/AddDepartment.java" line="71" class="com.university.web.action.admin.department.AddDepartment" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/data_access/service/department/impl/FacultyManagerImpl.java" line="53" class="com.university.data_access.service.department.impl.FacultyManagerImpl" package="com.university.data_access.service.department.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/AddDepartment.java" line="40" class="com.university.web.action.admin.department.AddDepartment" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/AddFaculty.java" line="46" class="com.university.web.action.admin.department.AddFaculty" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/AddFaculty.java" line="59" class="com.university.web.action.admin.department.AddFaculty" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/data_access/util/Test.java" line="57" class="com.university.data_access.util.Test" package="com.university.data_access.util">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/AddFacultyDegree.java" line="111" class="com.university.web.action.admin.department.AddFacultyDegree" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/department/AddUniversity.java" line="86" class="com.university.web.action.admin.department.AddUniversity" package="com.university.web.action.admin.department">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/general/Download.java" line="56" class="com.university.web.action.general.Download" package="com.university.web.action.general">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/general/Download.java" line="37" class="com.university.web.action.general.Download" package="com.university.web.action.general">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/account/AddCourseGroup.java" line="79" class="com.university.web.action.admin.account.AddCourseGroup" package="com.university.web.action.admin.account">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/account/AddCourseGroup.java" line="41" class="com.university.web.action.admin.account.AddCourseGroup" package="com.university.web.action.admin.account">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/account/AddCourseGroup.java" line="45" class="com.university.web.action.admin.account.AddCourseGroup" package="com.university.web.action.admin.account">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/account/subject/DeleteSubject.java" line="35" class="com.university.web.action.admin.account.subject.DeleteSubject" package="com.university.web.action.admin.account.subject">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/account/AddSubjectsToGroups.java" line="73" class="com.university.web.action.admin.account.AddSubjectsToGroups" package="com.university.web.action.admin.account">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/data_access/dao/account/impl/GroupSubjectDaoImpl.java" line="31" class="com.university.data_access.dao.account.impl.GroupSubjectDaoImpl" package="com.university.data_access.dao.account.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/account/AddSubjectsToGroups.java" line="58" class="com.university.web.action.admin.account.AddSubjectsToGroups" package="com.university.web.action.admin.account">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/account/subject/DeleteGroupSubject.java" line="26" class="com.university.web.action.admin.account.subject.DeleteGroupSubject" package="com.university.web.action.admin.account.subject">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/data_access/dao/account/impl/UserDaoImpl.java" line="53" class="com.university.data_access.dao.account.impl.UserDaoImpl" package="com.university.data_access.dao.account.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/test/service/CourseGroupManagerTest.java" line="69" class="service.CourseGroupManagerTest" package="service">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/university/web/action/admin/quiz/AddQuestion.java" line="43" class="com.university.web.action.admin.quiz.AddQuestion" package="com.university.web.action.admin.quiz">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="HayBusak" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="add_question.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/admin/quiz/add_question.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="279" column="62" selection-start="7905" selection-end="7905" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddQuestion.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/university/web/action/admin/quiz/AddQuestion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="0" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_actions.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/general/tiles/admin_actions.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="68" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.025411062">
+              <folding>
+                <element signature="e#1529#2079#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_actions.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/admin_actions.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="154" column="32" selection-start="3998" selection-end="3998" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="px.gif" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/images/px.gif">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon-sprite.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/images/icon-sprite.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/university/data_access/dao/quiz/IQuestionDao.java" />
+        <option value="$PROJECT_DIR$/src/com/university/data_access/dao/quiz/impl/QuestionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/university/data_access/config/data_access.xml" />
+        <option value="$PROJECT_DIR$/src/com/university/data_access/service/quiz/impl/QuestionManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/university/data_access/config/manager.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/tiles.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/general/tiles/banner_right.jsp" />
+        <option value="$PROJECT_DIR$/src/com/university/web/action/admin/account/topic/AddTopic.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/admin/account/add_topic.jsp" />
+        <option value="$PROJECT_DIR$/src/com/university/web/action/admin/account/ajax/SelectGroupSubjects.java" />
+        <option value="$PROJECT_DIR$/src/com/university/web/config/spring/presentation.xml" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/admin/quiz/add_question.jsp" />
+        <option value="$PROJECT_DIR$/src/com/university/web/action/admin/quiz/AddQuestion.java" />
+        <option value="$PROJECT_DIR$/web/css/admin_actions.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/general/tiles/admin_actions.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="general" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="general" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exams" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quiz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="general" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="general" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="left_menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="university" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="university" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="university" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="university" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="university" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quiz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="university" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="university" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="university" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="university" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ajax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HayBusak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="university" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="RESOURCE_BUNDLE_SPLITTER_PROPORTION" value="0.5" />
+    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UniversityLibs/struts2_3_4/tiles/tiles-jsp-2.0.6.jar!/" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.university.web.action.admin.account.ajax" />
+      <recent name="com.university.dataaccess.dao.general" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\IDE\Eva\Eva_Yerevan\HayBusak\src\com\university\data_access\mapper" />
+      <recent name="D:\workspace\IDE\Eva\Eva_Yerevan\HayBusak\src\com\university\data_access\dao" />
+      <recent name="D:\workspace\IDE\Eva\Eva_Yerevan\HayBusak\src\com\university\data_access\service" />
+      <recent name="D:\workspace\IDE\Eva\Eva_Yerevan\HayBusak\src\com\university\model\exams" />
+      <recent name="D:\workspace\IDE\Eva\Eva_Yerevan\HayBusak\web\css\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\IDE\Eva\Eva_Yerevan\HayBusak\web\WEB-INF\pages\admin\quiz" />
+      <recent name="D:\workspace\IDE\Eva\Eva_Yerevan\HayBusak\src\com\university\data_access\mapper\account" />
+      <recent name="D:\workspace\IDE\Eva\Eva_Yerevan\HayBusak\src\com\university\data_access\dao\general\impl" />
+      <recent name="D:\workspace\IDE\Eva\Eva_Yerevan\HayBusak" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
+    <configuration default="false" name="UserManagerTest.getById" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="HayBusak" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UserManagerTest" />
+      <option name="METHOD_NAME" value="getById" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserManagerTest.getByParams" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="HayBusak" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UserManagerTest" />
+      <option name="METHOD_NAME" value="getByParams" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserManagerTest.getAll" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="HayBusak" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UserManagerTest" />
+      <option name="METHOD_NAME" value="getAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CourseGroupManagerTest.addGroups" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="HayBusak" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.CourseGroupManagerTest" />
+      <option name="METHOD_NAME" value="addGroups" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CourseGroupManagerTest.addSubjects" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="HayBusak" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.CourseGroupManagerTest" />
+      <option name="METHOD_NAME" value="addSubjects" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tomcat 7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
+      <deployment>
+        <artifact name="HayBusak:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_7_0_HayBusak" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54547" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="HayBusak:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserManagerTest.getById" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserManagerTest.getByParams" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserManagerTest.getAll" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CourseGroupManagerTest.addGroups" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.CourseGroupManagerTest.addSubjects" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CourseGroupManagerTest.addSubjects" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CourseGroupManagerTest.addGroups" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserManagerTest.getAll" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserManagerTest.getByParams" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserManagerTest.getById" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f44a3b6-5619-4ba2-814d-15c216cfb7ff" name="Default" comment="" />
+      <created>1375384743430</created>
+      <updated>1375384743430</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41307372" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22358248" sideWeight="0.27399164" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22358248" sideWeight="0.24478443" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22358248" sideWeight="0.38664812" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32823366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38247567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/university/web/action/admin/account/topic/AddTopic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="3" selection-start="2783" selection-end="3155" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/university/web/action/admin/account/ajax/SelectGroupSubjectsUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/admin/account/view_course_groups.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/admin/account/add_topic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="229" column="49" selection-start="6465" selection-end="6465" vertical-scroll-proportion="-5.1923075" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/university/web/action/admin/account/ajax/SelectGroupSubjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="53" selection-start="2320" selection-end="2320" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/university/model/quiz/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="21" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/university/web/config/spring/presentation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="208" column="72" selection-start="9453" selection-end="9453" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="318" column="43" selection-start="14660" selection-end="14681" vertical-scroll-proportion="-10.2">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/university/model/quiz/lcp/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/admin/quiz/add_question.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="279" column="62" selection-start="7905" selection-end="7905" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/images/px.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/images/icon-sprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/university/web/action/admin/quiz/AddQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/images/sprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/admin_actions.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="32" selection-start="3998" selection-end="3998" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/general/tiles/admin_actions.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="68" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.025411062">
+          <folding>
+            <element signature="e#1529#2079#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>HayBusak:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (HayBusak)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>commons</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>HayBusak</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>junit</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

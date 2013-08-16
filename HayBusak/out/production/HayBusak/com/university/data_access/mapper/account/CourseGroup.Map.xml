@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsCourseGroup">
+
+    <cacheModel id="cmCourseGroup" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <resultMap id="rmCourseGroup" class="CourseGroup">
+        <result property="id" column="id" nullValue="0"/>
+        <result property="name" column="name"/>
+        <result property="course" column="course_id"/>
+        <result property="faculty" column="faculty_id" select="nsCourseGroup.getCourseGroupFaculty"/>
+    </resultMap>
+
+    <!--todo as our api just will in Armenian the lang_id = 1, otherwise change the select with resultMap-->
+    <select id="getCourseGroupFaculty" resultMap="nsFaculty.rmFacultyFacultyInfo" parameterClass="int">
+        SELECT * FROM faculty ,faculty_info
+        WHERE faculty.id = faculty_info.faculty_id
+          AND faculty_info.lang_id = 1
+          AND faculty.id = #id#
+    </select>
+
+    <insert id="add" parameterClass="CourseGroup">
+
+        INSERT INTO course_group (
+            `name`,
+            `course_id`,
+            `faculty_id`
+        ) VALUES (
+            #name#,
+            #course#,
+            #faculty.id#
+        )
+
+        <selectKey keyProperty="id" resultClass="int">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+    <insert id="addSubjects" parameterClass="map">
+
+        INSERT INTO group_subject (
+            `group_id`,
+            `subject_id`
+        ) VALUES
+        <iterate property="groups" conjunction=",">
+
+            <iterate property="subjects" conjunction=",">
+                (
+                    #groups[]#,
+                    #subjects[]#
+                )
+            </iterate>
+        </iterate>
+    </insert>
+
+    <select id="getById" resultMap="rmCourseGroup" parameterClass="int">
+        SELECT * FROM course_group WHERE `id` = #id#
+    </select>
+
+    <select id="getAll" resultMap="rmCourseGroup">
+        SELECT * FROM course_group
+    </select>
+
+    <select id="getByParams" resultMap="rmCourseGroup" parameterClass="map">
+        SELECT * FROM course_group WHERE 1
+        <isNotNull property="id">
+            AND `id`= #id#
+        </isNotNull>
+        <isNotNull property="name">
+            AND `name`= #name#
+        </isNotNull>
+        <isNotNull property="courseId">
+            AND `course_id`= #courseId#
+        </isNotNull>
+        <isNotNull property="facultyId">
+            AND `faculty_id`= #facultyId#
+        </isNotNull>
+    </select>
+
+    <update id="update" parameterClass="CourseGroup">
+
+        UPDATE course_group
+        SET
+        <isNotNull property="name">
+            `name` = #name#
+        </isNotNull>
+        WHERE
+        `id` =#id#
+
+    </update>
+
+
+    <delete id="remove" parameterClass="int">
+        DELETE FROM course_group
+        WHERE id =#id#
+    </delete>
+    <!--
+    public void add(CourseGroup group) throws DatabaseException;
+    public CourseGroup getById(int id) throws DatabaseException;
+    public List<CourseGroup> getAll() throws DatabaseException;
+    public List<CourseGroup> getByParams(Map<String, Object> params) throws DatabaseException;
+    public void update(CourseGroup user) throws DatabaseException, EntityNotFoundException;
+    public void delete(int id) throws DatabaseException, EntityNotFoundException;
+    -->
+
+
+</sqlMap>

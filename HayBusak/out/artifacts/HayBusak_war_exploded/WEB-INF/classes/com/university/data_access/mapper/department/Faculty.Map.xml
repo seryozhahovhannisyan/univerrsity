@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsFaculty">
+
+    <cacheModel id="cmFaculty" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <cacheModel id="cmFacultyInfo" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+    </cacheModel>
+
+    <resultMap id="rmFaculty" class="Faculty">
+        <result property="id" column="id" nullValue="0"/>
+        <result property="department" column="department_id" select="nsDepartment.getByIdAllLang"/><!--Object with list info-->
+        <result property="facultyInfos" column="id" select="nsFaculty.getFacultyInfoByFacultyId"/><!--List infos-->
+        <result property="email" column="email"/>
+        <result property="phone" column="phone"/>
+        <result property="logoPath" column="logo_path"/>
+    </resultMap>
+
+
+
+    <resultMap id="rmFacultyInfo" class="FacultyInfo">
+        <result property="name" column="name"/>
+        <result property="info" column="info"/>
+        <result property="facultyId" column="faculty_id"/>
+        <result property="language" column="lang_id"/>
+    </resultMap>
+
+    <resultMap id="rmFacultyFacultyInfo" class="Faculty">
+        <result property="id" column="id" nullValue="0"/>
+        <result property="email" column="email"/>
+        <result property="phone" column="phone"/>
+        <result property="logoPath" column="logo_path"/>
+
+        <result property="name" column="name"/> <!--Current lang case-->
+        <result property="info" column="info"/><!--Current lang case-->
+    </resultMap>
+
+    <resultMap id="rmFacultyFacultyInfos" class="Faculty">
+        <result property="id" column="id" nullValue="0"/>
+        <result property="email" column="email"/>
+        <result property="phone" column="phone"/>
+        <result property="logoPath" column="logo_path"/>
+
+        <result property="facultyInfos" column="id" select="nsFaculty.getFacultyInfoByFacultyId"/><!--List infos-->
+    </resultMap>
+
+    <select id="getFacultyInfoByFacultyId"
+            resultMap="rmFacultyInfo"
+            parameterClass="int"
+            cacheModel="cmFacultyInfo">
+        SELECT * FROM faculty_info WHERE  faculty_id =#id#
+    </select>
+
+
+    <insert id="add" parameterClass="Faculty">
+
+        INSERT INTO faculty (
+            `email`,
+            `phone`,
+            `logo_path`,
+            `department_id`
+        ) VALUES (
+            #email#,
+            #phone#,
+            #logoPath#,
+            #department.id#
+        )
+
+        <selectKey keyProperty="id" resultClass="int">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+    <insert id="addInfos" parameterClass="map">
+        INSERT
+        INTO faculty_info (
+            `name`,
+            `info`,
+            `faculty_id`,
+            `lang_id`
+        )VALUES
+        <iterate property="infos" conjunction=",">
+            (
+            #infos[].name#,
+            #infos[].info#,
+            #infos[].facultyId#,
+            #infos[].language#
+            )
+        </iterate>
+
+    </insert>
+
+
+    <select id="getById"
+            cacheModel="cmFaculty"
+            parameterClass="int"
+            resultMap="rmFacultyFacultyInfos">
+
+        SELECT * FROM faculty WHERE id =#id#
+
+
+    </select>
+
+    <select id="getAll"
+            cacheModel="cmFaculty"
+            resultMap="rmFaculty">
+
+        SELECT * FROM faculty
+
+
+    </select>
+
+    <select id="getByParams"
+            parameterClass="map"
+            resultMap="rmFacultyFacultyInfo">
+
+        SELECT f.*, i.*
+        FROM faculty AS f ,faculty_info AS i
+        WHERE
+        f.id = i.faculty_id
+        <isNotNull property="id">
+            AND f.id = #id#
+        </isNotNull>
+        <isNotNull property="langId">
+            AND i.lang_id = #langId#
+        </isNotNull>
+        <isNotNull property="departmentId">
+            AND f.department_id = #departmentId#
+        </isNotNull>
+        <isNotNull property="name">
+            AND i.name = #name#
+        </isNotNull>
+
+    </select>
+
+
+    <update id="edit" parameterClass="Faculty">
+
+        UPDATE faculty
+        SET
+            `phone` = #phone#,
+            `email` = #email#,
+            `logo_path` = #logoPath#
+        WHERE
+            id =#id#
+
+    </update>
+
+    <update id="editInfo" parameterClass="FacultyInfo">
+
+        UPDATE faculty_info
+        SET
+            `name` = #name#,
+            `info` = #info#
+        WHERE
+            `faculty_id` =#facultyId# AND
+            `lang_id`=#language#
+
+    </update>
+
+
+    <delete id="remove" parameterClass="int">
+        DELETE FROM faculty
+        WHERE id =#id#
+    </delete>
+
+
+</sqlMap>

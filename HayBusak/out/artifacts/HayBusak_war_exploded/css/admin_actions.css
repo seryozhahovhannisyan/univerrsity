@@ -1,0 +1,332 @@
+
+.widget-reset div, .widget-reset form, .widget-reset a, .widget-reset ul, .widget-reset li {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+#crud-widget {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("images/px.gif") repeat-y scroll right top #F4F4F4;
+    border-bottom-right-radius: 3px;
+    border-color: #BEBEBE #BEBEBE #BEBEBE -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid solid none;
+    border-top-right-radius: 3px;
+    border-width: 1px 1px 1px medium;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    display: block !important;
+    font: 13px/17px Helvetica,Arial,sans-serif;
+    height: 99px;
+    left: 0;
+    position: fixed;
+    top: 185px;
+    width: 24px;
+    z-index: 890;
+}
+#crud-widget a.widget-button {
+    background-image: url("images/sprite.png");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #FEFEFE;
+    border-top: 1px solid #E4E4E4;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 31px;
+    text-indent: -9999px;
+    width: 23px;
+}
+#crud-widget a.widget-button:hover {
+    background-color: #EEEEEE;
+}
+#crud-widget a.widget-button.crud {
+    background-position: -4px 0;
+    border-top: medium none;
+    height: 32px;
+}
+#crud-widget a.widget-button.edit {
+    background-position: -4px -30px;
+}
+#crud-widget a.widget-button.view {
+    background-position: -4px -60px;
+}
+#crud-widget .switcher-arrow {
+    background: url("images/arrow.gif") no-repeat scroll left top transparent;
+    display: block;
+    height: 8px;
+    position: absolute;
+    width: 5px;
+    z-index: 910;
+}
+#crud-add-wrap .switcher-arrow, #crud-update-wrap .switcher-arrow, #crud-view-wrap .switcher-arrow {
+    left: 18px;
+    top: 15px;
+}
+#crud-add-wrap {
+    display: none;
+    left: 23px;
+    padding-left: 22px;
+    position: absolute;
+    top: -1px;
+    width: 320px;
+    z-index: 900;
+}
+#crud-widget-switcher {
+    background: url("images/px.gif") repeat-y scroll center top #F4F4F4;
+    border: 1px solid #BEBEBE;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    width: 318px;
+    z-index: 900;
+}
+#crud-widget-switcher ul {
+    float: left;
+    left: 0;
+    list-style: none outside none;
+    width: 158px;
+}
+#crud-widget-switcher ul li a {
+    background: none repeat scroll 0 0 transparent;
+    color: #555555;
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    width: 138px;
+}
+#crud-widget-switcher .switcher-list-left {
+    margin-right: 1px;
+}
+#crud-update-wrap, #crud-view-wrap {
+    display: none;
+    left: 23px;
+    padding-left: 22px;
+    position: absolute;
+    top: 33px;
+    width: 240px;
+    z-index: 900;
+}
+#crud-view-wrap {
+    top: 66px;
+}
+#crud-update, #crud-view {
+    background: none repeat scroll 0 0 #F4F4F4;
+    border: 1px solid #BEBEBE;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    width: 218px;
+    z-index: 900;
+}
+#crud-update .crud-widget-title, #crud-view .crud-widget-title {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #F4F4F4 #F4F4F4 #FEFEFE;
+    border-image: none;
+    border-style: solid;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-width: 1px;
+    color: #000000;
+    display: block;
+    padding: 8px 10px;
+    text-shadow: 0 1px 0 #F4F4F4;
+    width: 196px;
+}
+#crud-update ul, #envato-community ul {
+    float: left;
+    left: 0;
+    list-style: none outside none;
+    width: 218px;
+}
+#crud-update ul li a, #crud-view ul li a {
+    background: none repeat scroll 0 0 transparent;
+    color: #555555;
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    width: 198px;
+}
+#crud-widget .widget-icon {
+    background: url("images/icon-sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-right: 9px;
+    width: 16px;
+}
+#crud-widget .icon-microlancer {
+    background-position: -176px -48px;
+}
+#crud-widget .icon-envato {
+    background-position: 0 0;
+}
+#crud-widget .icon-themeforest {
+    background-position: -16px 0;
+}
+#crud-widget .icon-graphicriver {
+    background-position: -32px 0;
+}
+#crud-widget .icon-videohive {
+    background-position: -48px 0;
+}
+#crud-widget .icon-audiojungle {
+    background-position: -64px 0;
+}
+#crud-widget .icon-codecanyon {
+    background-position: -80px 0;
+}
+#crud-widget .icon-activeden {
+    background-position: -96px 0;
+}
+#crud-widget .icon-3docean {
+    background-position: -112px 0;
+}
+#crud-widget .icon-tutsmarketplace {
+    background-position: -128px 0;
+}
+#crud-widget .icon-photodune {
+    background-position: -240px 0;
+}
+#crud-widget .icon-mac {
+    background-position: -144px 0;
+}
+#crud-widget .icon-web {
+    background-position: -160px 0;
+}
+#crud-widget .icon-iphone {
+    background-position: -176px 0;
+}
+#crud-widget .icon-android {
+    background-position: -192px 0;
+}
+#crud-widget .icon-ipad {
+    background-position: -208px 0;
+}
+#crud-widget .icon-windows {
+    background-position: -224px 0;
+}
+#crud-widget .icon-creattica {
+    background-position: -224px -16px;
+}
+#crud-widget .icon-freelanceswitch {
+    background-position: 0 -16px;
+}
+#crud-widget .icon-freelanceswitch-jobs {
+    background-position: -16px -16px;
+}
+#crud-widget .icon-rockablepress {
+    background-position: -32px -16px;
+}
+#crud-widget .icon-tutsplus {
+    background-position: -48px -16px;
+}
+#crud-widget .icon-psdtuts {
+    background-position: -64px -16px;
+}
+#crud-widget .icon-nettuts {
+    background-position: -80px -16px;
+}
+#crud-widget .icon-vectortuts {
+    background-position: -96px -16px;
+}
+#crud-widget .icon-audiotuts {
+    background-position: -112px -16px;
+}
+#crud-widget .icon-aetuts {
+    background-position: -128px -16px;
+}
+#crud-widget .icon-activetuts {
+    background-position: -144px -16px;
+}
+#crud-widget .icon-cgtuts {
+    background-position: -160px -16px;
+}
+#crud-widget .icon-phototuts {
+    background-position: -176px -16px;
+}
+#crud-widget .icon-mobiletuts {
+    background-position: -192px -16px;
+}
+#crud-widget .icon-wptuts {
+    background-position: -240px -16px;
+}
+#crud-widget .icon-webdesigntuts {
+    background-position: -208px -16px;
+}
+#crud-widget .icon-mactuts {
+    background-position: -256px -16px;
+}
+#crud-widget .icon-gamedevtuts {
+    background-position: -272px -16px;
+}
+#crud-widget .icon-crafttuts {
+    background-position: -288px -16px;
+}
+#crud-widget .icon-envato-support-center {
+    background-position: 0 -32px;
+}
+#crud-widget .icon-envato-wiki {
+    background-position: -16px -32px;
+}
+#crud-widget .icon-envato-support-twitter {
+    background-position: -32px -32px;
+}
+#crud-widget .icon-envato-notes {
+    background-position: 0 -48px;
+}
+#crud-widget .icon-envato-newsletter {
+    background-position: -16px -48px;
+}
+#crud-widget .icon-envato-podcast {
+    background-position: -32px -48px;
+}
+#crud-widget .icon-wp-envato {
+    background-position: -48px -48px;
+}
+#crud-widget .icon-envato-elite {
+    background-position: -64px -48px;
+}
+#crud-widget .icon-envato-flickr {
+    background-position: -80px -48px;
+}
+#crud-widget .icon-envato-twitter {
+    background-position: -96px -48px;
+}
+#crud-widget .icon-envato-facebook {
+    background-position: -112px -48px;
+}
+#crud-widget .icon-envato-slideshare {
+    background-position: -128px -48px;
+}
+#crud-widget .icon-envato-dribbble {
+    background-position: -144px -48px;
+}
+#crud-widget .icon-envato-github {
+    background-position: -160px -48px;
+}
+#crud-widget-switcher ul li, #crud-update ul li, #envato-community ul li {
+    border-bottom: 1px solid #FEFEFE;
+    display: block;
+    padding: 1px;
+}
+#crud-widget-switcher ul li:last-child, #crud-update ul li:last-child, #envato-community ul li:last-child {
+    border-bottom: medium none;
+}
+#crud-widget-switcher ul li a:hover, #crud-update ul li a:hover, #envato-community ul li a:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #000000;
+}

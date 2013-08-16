@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsUser">
+
+    <cacheModel id="cmUser" type="LRU">
+        <flushInterval hours="24"/>
+        <property name="fileSize" value="1000"/>
+        <flushOnExecute statement="add"/>
+    </cacheModel>
+
+    <!--
+     /**
+     * id               int(6) unsigned  (NULL)     NO              (NULL)           select,insert,update,references
+     * name             varchar(50)      utf8_bin   NO              (NULL)           select,insert,update,references
+     * surname          varchar(50)      utf8_bin   NO              (NULL)           select,insert,update,references
+     * second_name      varchar(50)      utf8_bin   NO              (NULL)           select,insert,update,references
+     * photo_path       varchar(256)     utf8_bin   YES             (NULL)           select,insert,update,references
+     * dob              date             (NULL)     NO              (NULL)           select,insert,update,references
+     * email            varchar(50)      utf8_bin   NO              (NULL)           select,insert,update,references
+     * password         varchar(256)     utf8_bin   NO              (NULL)           select,insert,update,references
+     * address          varchar(256)     utf8_bin   YES             (NULL)           select,insert,update,references
+     * phone            varchar(50)      utf8_bin   YES             (NULL)           select,insert,update,references
+     * is_active        int(1) unsigned  (NULL)     NO              (NULL)           select,insert,update,references
+     * is_logged_on      int(1) unsigned  (NULL)     NO              (NULL)           select,insert,update,references
+     * entrance_year    int(4) unsigned  (NULL)     YES             (NULL)           select,insert,update,references
+     * profile_id       int(1) unsigned  (NULL)     YES     MUL     (NULL)           select,insert,update,references
+     * course_group_id  int(5) unsigned  (NULL)     YES     MUL     (NULL)           select,insert,update,references
+     * faculty_id       int(5) unsigned  (NULL)     YES     MUL     (NULL)           select,insert,update,references
+     */
+
+
+    -->
+
+    <resultMap id="rmUser" class="User">
+
+        <result property="id" column="id" nullValue="0"/>
+        <result property="name" column="name"/>
+        <result property="surname" column="surname"/>
+        <result property="secondName" column="second_name"/>
+        <result property="photoPath" column="photo_path"/>
+        <result property="dob" column="dob"/>
+        <result property="email" column="email"/>
+        <result property="password" column="password"/>
+        <result property="address" column="address"/>
+        <result property="phone" column="phone"/>
+        <result property="isActive" column="is_active"/>
+        <result property="isLoggedOn" column="is_logged_on"/>
+        <result property="entranceYear" column="entrance_year"/>
+        <!--enum profile-->
+        <result property="profile" column="profile_id"/>
+        <!-- Objects -->
+        <result property="courseGroup" column="course_group_id" select="nsCourseGroup.getById"/>
+        <result property="faculty" column="faculty_id" resultMap="nsFaculty.rmFacultyFacultyInfo"/>
+
+    </resultMap>
+
+    <insert id="add" parameterClass="User">
+
+        INSERT INTO `user` (
+        `name`,
+        `surname`,
+        `second_name`,
+        `photo_path`,
+        `dob`,
+        `email`,
+        `password`,
+        `address`,
+        `phone`,
+        `is_active`,
+        `is_logged_on`,
+        `entrance_year`,
+        `profile_id`,
+        `course_group_id`,
+        `faculty_id`
+        ) VALUES (
+        #name#,
+        #surname#,
+        #secondName#,
+        #photoPath#,
+        #dob#,
+        #email#,
+        #password#,
+        #address#,
+        #phone#,
+        #isActive#,
+        #isLoggedOn#,
+        #entranceYear#,
+        #profile#,
+        #courseGroup.id#,
+        #faculty.id#
+        )
+
+        <selectKey keyProperty="id" resultClass="int">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+    <!--
+    public void add(User user) throws DatabaseException;
+    public User login(String email, String password) throws DatabaseException;
+    public User getById(int id) throws DatabaseException;
+    public List<User> getAll() throws DatabaseException;
+    public boolean isEmailExists(String email) throws DatabaseException;
+    public List<User> getByParams(Map<String,Object> params) throws InternalErrorException;
+    public void update(User user) throws DatabaseException, EntityNotFoundException;
+    public void deleteById(int id) throws DatabaseException, EntityNotFoundException;
+    -->
+
+    <select id="login"
+            resultMap="rmUser"
+            parameterClass="map"
+            cacheModel="cmUser"
+            >
+
+        SELECT u.*,f.*, i.*
+        FROM `user` AS u, faculty AS f ,faculty_info AS i
+        WHERE u.faculty_id = f.id
+            AND f.id = i.faculty_id
+            AND i.lang_id = #langId#
+            AND u.`email` =#email#
+            AND u.`password`= #password#
+
+    </select>
+
+    <select id="getById"
+            resultMap="rmUser"
+            parameterClass="map"
+            cacheModel="cmUser"
+            >
+        SELECT u.*, f.*, i.*
+        FROM `user` AS u, faculty AS f ,faculty_info AS i
+        WHERE u.`id` =#id#
+            AND u.faculty_id = f.id
+            AND f.id = i.faculty_id
+            AND i.lang_id = #langId#
+
+    </select>
+
+    <select id="getAll"
+            resultMap="rmUser"
+            parameterClass="int"
+            cacheModel="cmUser"
+            >
+
+        SELECT u.*, f.* , i.*
+        FROM `user` AS u, faculty AS f ,faculty_info AS i
+        WHERE u.faculty_id = f.id
+            AND f.id = i.faculty_id
+            AND i.lang_id = #langId#
+
+    </select>
+
+    <select id="isEmailExists"
+            resultClass="int"
+            parameterClass="string"
+            cacheModel="cmUser"
+            >
+
+        SELECT COUNT(`id`) FROM `user` WHERE `email`= #email#
+
+    </select>
+
+    <select id="getByParams"
+            resultMap="rmUser"
+            parameterClass="map"
+            cacheModel="cmUser"
+            >
+
+        SELECT u.*,f.*, i.*
+            FROM `user` AS u, faculty AS f ,faculty_info AS i
+            WHERE u.faculty_id = f.id
+                AND f.id = i.faculty_id
+                AND i.lang_id = #langId#
+        <isNotNull property="isActive">
+            AND u.is_active= #isActive#
+        </isNotNull>
+        <isNotNull property="isLoggedOn">
+            AND u.is_logged_on = #isLoggedOn#
+        </isNotNull>
+        <isNotNull property="entranceYear">
+            AND u.entrance_year = #entranceYear#
+        </isNotNull>
+        <isNotNull property="profileId">
+            AND u.profile_id = #profileId#
+        </isNotNull>
+        <isNotNull property="courseGroupId">
+            AND u.course_group_id = #courseGroupId#
+        </isNotNull>
+        <isNotNull property="facultyId">
+            AND u.faculty_id = #facultyId#
+        </isNotNull>
+
+    </select>
+
+    <update id="update" parameterClass="Topic">
+
+        UPDATE `user`
+        SET
+        <isNotNull property="photoPath">
+            AND photo_path= #photoPath#
+        </isNotNull>
+        <isNotNull property="phone">
+            AND phone = #phone#
+        </isNotNull>
+        <isNotNull property="password">
+            AND password = #password#
+        </isNotNull>
+        <isNotNull property="address">
+            AND address = #address#
+        </isNotNull>
+        <isNotNull property="isActive">
+            AND is_active= #isActive#
+        </isNotNull>
+        <isNotNull property="isLoggedOn">
+            AND is_logged_on = #isLoggedOn#
+        </isNotNull>
+        <isNotNull property="entranceYear">
+            AND entrance_year = #entranceYear#
+        </isNotNull>
+        <isNotNull property="profileId">
+            AND profile_id = #profileId#
+        </isNotNull>
+        <isNotNull property="courseGroupId">
+            AND course_group_id = #courseGroupId#
+        </isNotNull>
+        <isNotNull property="facultyId">
+            AND faculty_id = #facultyId#
+        </isNotNull>
+
+
+        WHERE
+        `id` =#id#
+
+    </update>
+
+
+    <delete id="remove" parameterClass="int">
+        DELETE FROM `user`
+        WHERE id =#id#
+    </delete>
+
+
+</sqlMap>

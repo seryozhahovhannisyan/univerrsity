@@ -1,0 +1,114 @@
+.menu_horizont, .menu_horizont ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    padding: 0;
+}
+.menu_horizont {
+    position: relative;
+    z-index: 50;
+    float: right;
+}
+.menu_horizont ul {
+    display: none;
+}
+.menu_horizont li.sub {
+    background-image: url("/icon/general/header/arrow_down.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.menu_horizont li {
+    float: left;
+    position: relative;
+}
+.menu_horizont > li {
+    /*margin-right: 3%;*/
+}
+.menu_horizont li a {
+    font-family: verdana,arial,sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.menu_horizont li b {
+    background-image: url("/icon/general/header/arrow_right.png");
+    background-position: 2px center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+.menu_horizont li a b.clicked {
+    background: url("/icon/general/header/arrow_right.png") no-repeat scroll 2px center #EA8839;
+    border-radius: 0 8px 0 8px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+}
+.menu_horizont li ul {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #EA8839;
+    border-radius: 0 8px 0 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    float: left;
+    height: auto;
+    left: 0;
+    opacity: 0.95;
+    padding: 10px 2px;
+    position: absolute;
+    top: 33px;
+}
+* + html .menu_horizont li ul {
+    padding: 1px;
+}
+* + html .menu_horizont li ul.w1 {
+    width: 150px;
+}
+* + html .menu_horizont li ul.w2 {
+    width: 200px;
+}
+* + html .menu_horizont li ul.w3 {
+    width: 350px;
+}
+* + html .menu_horizont li ul.w4 {
+    width: 350px;
+}
+* + html .menu_horizont li ul.w5 {
+    width: 300px;
+}
+.menu_horizont li ul li {
+    float: none;
+    opacity: 1;
+}
+.menu_horizont li ul li a {
+    color: #003399;
+    display: block;
+    font-size: 12px;
+    height: 19px;
+    line-height: 19px;
+    margin: 0 1px;
+    padding: 0 5px 3px;
+}
+.menu_horizont li ul li:hover a {
+    background-color: #EA8839;
+    color: #FFFFFF;
+}
+.menu_horizont li a:hover b {
+    background-color: #EA8839;
+    border-radius: 3px 3px 0 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+}
+.menu_hor {
+    height: 33px;
+}
+
+
+textarea {
+    /*width: 90%;*/ /* Ширина поля в процентах */
+    /*height: 50px;*/ /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+}

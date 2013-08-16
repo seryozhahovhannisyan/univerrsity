@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="nsFacultyDegree">
+
+    <resultMap id="rmFacultyDegree" class="FacultyDegree">
+        <result property="faculty" column="faculty_id" resultMap="nsFaculty.rmFacultyFacultyInfo"/>
+        <result property="degree" column="degree_id"  />
+        <result property="document" column="document_id" resultMap="nsDocument.rmDocInfo"/>
+    </resultMap>
+
+    <insert id="add" parameterClass="FacultyDegree">
+        INSERT INTO faculty_degree (
+            `faculty_id`,
+            `degree_id`,
+            `document_id`
+        ) VALUE (
+            #faculty.id#,
+            #degree#,
+            #document.id#
+        )
+
+        <selectKey keyProperty="id" resultClass="int">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+
+    </insert>
+
+
+    <select id="getByParams" resultMap="rmFacultyDegree" parameterClass="map">
+         SELECT f.*, d.* ,
+            doc.id AS doc_id,
+            doc.type_id AS doc_type_id,
+            doc.serial_number AS doc_serial_number,
+            doc.confirm_date AS doc_confirm_date,
+            doc_i.about AS doc_about,
+            doc.path AS doc_path,
+            doc_i.*,fi.* FROM `language` AS l, faculty_degree AS fd
+            LEFT JOIN faculty AS f ON fd.faculty_id = f.id
+            LEFT JOIN degree_lcp AS d ON fd.degree_id = d.degree_id
+            LEFT JOIN document AS doc ON fd.document_id = doc.id
+
+            LEFT JOIN document_info AS doc_i ON doc.id = doc_i.document_id
+            LEFT JOIN faculty_info AS fi  ON  f.id = fi.faculty_id
+            WHERE l.id = fi.lang_id = doc_i.lang_id = d.lang_id
+                <isNotNull property="langId">
+                    AND l.id = #langId#
+                </isNotNull>
+                <isNotNull property="docTypeId">
+                    AND doc.type_id = #docTypeId#
+                </isNotNull>
+    </select>
+
+</sqlMap>
